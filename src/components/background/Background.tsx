@@ -153,6 +153,8 @@ const LightRays: React.FC<LightRaysProps> = ({
       gl.canvas.style.width = '100%';
       gl.canvas.style.height = '100%';
 
+      const isMobile = window.innerWidth < 768;
+      
       while (containerRef.current.firstChild) {
         containerRef.current.removeChild(containerRef.current.firstChild);
       }
@@ -167,6 +169,7 @@ void main() {
 }`;
 
       const frag = `precision highp float;
+${isMobile ? "#define MOBILE" : ""}
 
 uniform float iTime;
 uniform vec2  iResolution;
@@ -230,11 +233,15 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
   vec4 rays1 = vec4(1.0) *
                rayStrength(rayPos, finalRayDir, coord, 36.2214, 21.11349,
                            1.5 * raysSpeed);
-  vec4 rays2 = vec4(1.0) *
-               rayStrength(rayPos, finalRayDir, coord, 22.3991, 18.0234,
-                           1.1 * raysSpeed);
 
-  fragColor = rays1 * 0.5 + rays2 * 0.4;
+  #ifdef MOBILE
+    fragColor = rays1 * 0.7; 
+  #else
+    vec4 rays2 = vec4(1.0) *
+                 rayStrength(rayPos, finalRayDir, coord, 22.3991, 18.0234,
+                             1.1 * raysSpeed);
+    fragColor = rays1 * 0.5 + rays2 * 0.4;
+  #endif
 
   if (noiseAmount > 0.0) {
     float n = noise(coord * 0.01 + iTime * 0.1);

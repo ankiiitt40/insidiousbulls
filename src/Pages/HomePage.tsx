@@ -10,23 +10,18 @@ import { reviews } from "../components/data/reviews";
 import ScrollVelocity from '../components/ui/ScrollVelocity';
 import { CheckCircle, XCircle, Layers } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 import { BarChart3, TrendingUp, BookOpenCheck, Clock } from "lucide-react";
 
+import TradingChart from '../components/home/TradingChart';
+import FAQ from '../components/home/FAQ';
 
 const firstRowReviews = reviews.slice(0, 10);
 const secondRowReviews = reviews.slice(10, 20);
-
-
-
 
 function HomePage() {
   const navigate = useNavigate();
   return (
 <section className="relative w-full flex flex-col items-center text-center px-5 py-24 overflow-x-hidden">
-
-
-
 
        <div className="flex flex-col items-center gap-10">
 
@@ -39,6 +34,13 @@ function HomePage() {
         >
           Trade Smarter. Grow Faster.
         </GradientText>
+
+        {/* Trading Chart Hook */}
+        <div className="w-full max-w-lg -mt-6">
+          <TradingChart />
+        </div>
+
+        {/* Rest of the UI */}
 
         {/* Second Line */}
         <div className="flex flex-col sm:flex-row items-center justify-center text-lg sm:text-2xl md:text-3xl font-semibold">
@@ -142,7 +144,7 @@ function HomePage() {
       <Globe className="w-5 h-5 text-emerald-400 flex-shrink-0" />
 
       <div className="text-left">
-        <p className="text-[10px] text-gray-400 uppercase tracking-wider">
+        <p className="text-[12px] text-gray-400 uppercase tracking-wider">
           Languages
         </p>
 
@@ -168,7 +170,7 @@ function HomePage() {
       <Users className="w-5 h-5 text-blue-400 flex-shrink-0" />
 
       <div className="text-left">
-        <p className="text-[10px] text-gray-400 uppercase tracking-wider">
+        <p className="text-[12px] text-gray-400 uppercase tracking-wider">
           Availability
         </p>
 
@@ -595,6 +597,7 @@ function HomePage() {
 </div>
 
 
+<FAQ />
     </section>
   )
 }

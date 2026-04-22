@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import StaggeredMenu from '../components/Navbar/StaggeredMenu'
 
 const menuItems = [
@@ -16,24 +16,38 @@ const socialItems = [
 
 function NavbarPage() {
   const [scrolled, setScrolled] = useState(false)
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
+      const currentScrollY = window.scrollY;
+      
+      // Blur background logic
+      setScrolled(currentScrollY > 20);
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      // Smart Hide/Show Logic
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        setVisible(false); // Scrolling down - Hide
+      } else {
+        setVisible(true); // Scrolling up - Show
+      }
+      
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-<div className="fixed top-0 left-0 w-full h-[70px] z-40">
+<div className={`fixed top-0 left-0 w-full z-40 transition-transform duration-500 ease-in-out ${visible ? "translate-y-0" : "-translate-y-[90px]"} h-[80px] md:h-[90px]`}>
 
   {/* Blur Background Layer */}
   <div
     className={`
       absolute inset-0 transition-all duration-300
-      ${scrolled ? "backdrop-blur-xl bg-black/40" : "bg-transparent"}
+      ${scrolled ? "backdrop-blur-xl bg-black/40 border-b border-white/10" : "bg-transparent"}
     `}
   />
 
@@ -48,19 +62,19 @@ function NavbarPage() {
 
   {/* Navbar Content */}
   <div className="relative h-full flex items-center justify-end px-6">
-    <StaggeredMenu
-      isFixed={true}
-      position="right"
-      items={menuItems}
-      socialItems={socialItems}
-      displaySocials
-      displayItemNumbering
-      menuButtonColor="#ffffff"
-      openMenuButtonColor="#000000"
-      changeMenuColorOnOpen
-      colors={['#B19EEF', '#5227FF']}
-      accentColor="#303de8"
-    />
+        <StaggeredMenu
+          isFixed={true} 
+          position="right"
+          items={menuItems}
+          socialItems={socialItems}
+          displaySocials
+          displayItemNumbering
+          menuButtonColor="#ffffff"
+          openMenuButtonColor="#000000"
+          changeMenuColorOnOpen
+          colors={['#10b981', '#059669']} 
+          accentColor="#10b981"
+        />
   </div>
 
 </div>
