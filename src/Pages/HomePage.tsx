@@ -492,54 +492,54 @@ function HomePage() {
   <div className="max-w-6xl mx-auto 
                   border border-white/10 
                   rounded-3xl 
-                  p-8 md:p-12 
-                  grid grid-cols-1 lg:grid-cols-2 gap-12
+                  p-4 sm:p-8 md:p-12 
+                  grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12
                   bg-white/[0.02] backdrop-blur-md">
 
     {/* INSIDIOUS BULLS SIDE */}
     <div className="border border-green-500/40 
                     rounded-2xl 
-                    p-8 
+                    p-5 sm:p-8 
                     shadow-[0_0_40px_rgba(0,255,0,0.15)]
                     bg-white/[0.03]">
 
-      <div className="flex items-center gap-3 mb-8">
+      <div className="flex items-center gap-3 mb-6 sm:mb-8">
         <Layers className="text-green-400" />
-        <h3 className="text-2xl font-semibold">
+        <h3 className="text-xl sm:text-2xl font-semibold">
           INSIDIOUS BULLS
         </h3>
       </div>
 
-      <ul className="space-y-6">
+      <ul className="space-y-4 sm:space-y-6">
 
         <li className="flex items-start gap-3">
-          <CheckCircle className="text-green-400 mt-1" size={20} />
-          <span>Capital Protection Focused Strategies</span>
+          <CheckCircle className="text-green-400 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base">Capital Protection Focused Strategies</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <CheckCircle className="text-green-400 mt-1" size={20} />
-          <span>Live Market Based Practical Learning</span>
+          <CheckCircle className="text-green-400 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base">Live Market Based Practical Learning</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <CheckCircle className="text-green-400 mt-1" size={20} />
-          <span>Data-Driven & Price Action Methodology</span>
+          <CheckCircle className="text-green-400 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base">Data-Driven & Price Action Methodology</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <CheckCircle className="text-green-400 mt-1" size={20} />
-          <span>Real-Time Trade Execution Examples</span>
+          <CheckCircle className="text-green-400 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base">Real-Time Trade Execution Examples</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <CheckCircle className="text-green-400 mt-1" size={20} />
-          <span>Strict Risk Management Framework</span>
+          <CheckCircle className="text-green-400 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base">Strict Risk Management Framework</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <CheckCircle className="text-green-400 mt-1" size={20} />
-          <span>Performance Tracking & Psychology Training</span>
+          <CheckCircle className="text-green-400 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base">Performance Tracking & Psychology Training</span>
         </li>
 
       </ul>
@@ -548,46 +548,46 @@ function HomePage() {
     {/* OTHERS SIDE */}
     <div className="border border-white/10 
                     rounded-2xl 
-                    p-8 
+                    p-5 sm:p-8 
                     bg-white/[0.02]">
 
-      <div className="flex items-center gap-3 mb-8">
+      <div className="flex items-center gap-3 mb-6 sm:mb-8">
         <Layers className="text-white/60" />
-        <h3 className="text-2xl font-semibold text-white/80">
+        <h3 className="text-xl sm:text-2xl font-semibold text-white/80">
           Others
         </h3>
       </div>
 
-      <ul className="space-y-6">
+      <ul className="space-y-4 sm:space-y-6">
 
         <li className="flex items-start gap-3">
-          <XCircle className="text-orange-500 mt-1" size={20} />
-          <span>Indicator Overload Without Clear Edge</span>
+          <XCircle className="text-orange-500 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base text-white/70">Indicator Overload Without Clear Edge</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <XCircle className="text-orange-500 mt-1" size={20} />
-          <span>Theory-Heavy, Little Practical Exposure</span>
+          <XCircle className="text-orange-500 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base text-white/70">Theory-Heavy, Little Practical Exposure</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <XCircle className="text-orange-500 mt-1" size={20} />
-          <span>No Structured Risk Management</span>
+          <XCircle className="text-orange-500 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base text-white/70">No Structured Risk Management</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <XCircle className="text-orange-500 mt-1" size={20} />
-          <span>Random Strategy Hopping</span>
+          <XCircle className="text-orange-500 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base text-white/70">Random Strategy Hopping</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <XCircle className="text-orange-500 mt-1" size={20} />
-          <span>No Trading Psychology Guidance</span>
+          <XCircle className="text-orange-500 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base text-white/70">No Trading Psychology Guidance</span>
         </li>
 
         <li className="flex items-start gap-3">
-          <XCircle className="text-orange-500 mt-1" size={20} />
-          <span>Certificate-Based Learning Without Real Skill</span>
+          <XCircle className="text-orange-500 mt-1 flex-shrink-0" size={18} />
+          <span className="text-sm sm:text-base text-white/70">Certificate-Based Learning Without Real Skill</span>
         </li>
 
       </ul>
