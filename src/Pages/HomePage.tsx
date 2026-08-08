@@ -28,27 +28,6 @@ function HomePage() {
   const videoRef = useRef<HTMLDivElement>(null);
   const isVideoInView = useInView(videoRef, { once: true, margin: "600px" });
 
-  const homeSchema = [
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Insidious Bulls",
-      "url": "https://insidiousbulls.com/",
-      "logo": "https://insidiousbulls.com/logo.png",
-      "description": "Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets.",
-      "sameAs": [
-        "https://www.instagram.com/tradewith_shubham7",
-        "https://www.linkedin.com/in/shubhamv7/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Insidious Bulls",
-      "url": "https://insidiousbulls.com/"
-    }
-  ];
-
   return (
     <section className="relative w-full flex flex-col items-center text-center px-4 sm:px-5 py-12 sm:py-24 overflow-x-hidden">
       <SEO
@@ -58,20 +37,26 @@ function HomePage() {
         ogTitle="Insidious Bulls | Learn Forex, Crypto & Commodity Trading"
         ogDescription="Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets."
         ogUrl="https://insidiousbulls.com/"
-        schema={homeSchema}
       />
 
        <div className="flex flex-col items-center gap-10">
 
         {/* Main Heading */}
-        <GradientText
-          colors={["#00C853", "#e0e8e4", "#69F0AE", "#116835"]}
-          animationSpeed={8}
-          showBorder={false}
-          className="text-[28px] sm:text-3xl md:text-5xl lg:text-7xl font-bold leading-tight break-words"
-        >
-          Trade Smarter. Grow Faster.
-        </GradientText>
+        <div className="flex flex-col items-center gap-4 max-w-4xl">
+          <h1 className="w-full">
+            <GradientText
+              colors={["#00C853", "#e0e8e4", "#69F0AE", "#116835"]}
+              animationSpeed={8}
+              showBorder={false}
+              className="text-[28px] sm:text-3xl md:text-5xl lg:text-7xl font-bold leading-tight break-words"
+            >
+              Trade Smarter. Grow Faster.
+            </GradientText>
+          </h1>
+          <p className="text-white/60 text-sm sm:text-base md:text-lg max-w-2xl px-4 text-center mt-2 leading-relaxed">
+            Insidious Bulls is a premium trading education platform helping learners master <strong className="font-medium text-white/80">forex, crypto, commodities, price action,</strong> and <strong className="font-medium text-white/80">risk management</strong>.
+          </p>
+        </div>
 
         {/* Trading Chart Hook */}
         <div className="w-full max-w-lg -mt-6">
