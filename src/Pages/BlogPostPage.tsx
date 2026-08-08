@@ -1,7 +1,7 @@
 import { useParams, Link, useNavigate } from "react";
 import { BLOG_POSTS } from "../data/blogData";
 import SEO from "../components/SEO/SEO";
-import { Clock, Calendar, User, ArrowLeft, ArrowRight, CheckCircle2, BookOpen, ExternalLink, HelpCircle, AlertCircle } from "lucide-react";
+import { Clock, Calendar, User, ArrowLeft, ArrowRight, CheckCircle2, BookOpen, ExternalLink, HelpCircle, AlertCircle, RefreshCw } from "lucide-react";
 import GradientText from "../components/Text/GradientText";
 
 export default function BlogPostPage() {
@@ -31,7 +31,7 @@ export default function BlogPostPage() {
   // Related Posts lookup
   const relatedArticles = BLOG_POSTS.filter((p) => post.relatedPosts?.includes(p.slug));
 
-  // Schemas
+  // 1. Article / BlogPosting Schema
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -58,6 +58,7 @@ export default function BlogPostPage() {
     }
   };
 
+  // 2. BreadcrumbList Schema (Matches visible breadcrumbs exactly)
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -78,7 +79,7 @@ export default function BlogPostPage() {
         "@type": "ListItem",
         "position": 3,
         "name": post.category,
-        "item": `https://insidiousbulls.com/blog?category=${encodeURIComponent(post.category)}`
+        "item": `https://insidiousbulls.com/blog`
       },
       {
         "@type": "ListItem",
@@ -89,7 +90,7 @@ export default function BlogPostPage() {
     ]
   };
 
-  // FAQ Schema if visible FAQ exists
+  // 3. FAQPage Schema ONLY if visible FAQ exists on the page (Rule #1)
   const faqSchema = post.faq && post.faq.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -109,7 +110,7 @@ export default function BlogPostPage() {
 
   return (
     <article className="w-full min-h-screen px-4 sm:px-6 md:px-12 py-12 text-white max-w-4xl mx-auto">
-      {/* SEO Metadata */}
+      {/* Dynamic SEO Head Component */}
       <SEO
         title={post.metaTitle}
         description={post.metaDescription}
@@ -122,13 +123,15 @@ export default function BlogPostPage() {
         schema={schemasToInject}
       />
 
-      {/* Visible Breadcrumbs */}
-      <nav aria-label="Breadcrumb" className="mb-8 flex items-center text-xs sm:text-sm text-white/50 space-x-2">
+      {/* Visible Breadcrumb Trail */}
+      <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center text-xs sm:text-sm text-white/50 gap-2">
         <Link to="/" className="hover:text-emerald-400 transition-colors">Home</Link>
         <span>/</span>
         <Link to="/blog" className="hover:text-emerald-400 transition-colors">Blog</Link>
         <span>/</span>
         <span className="text-emerald-400">{post.category}</span>
+        <span>/</span>
+        <span className="text-white/80 font-medium truncate max-w-[200px] sm:max-w-xs">{post.title}</span>
       </nav>
 
       {/* Back Button */}
@@ -139,18 +142,23 @@ export default function BlogPostPage() {
         <ArrowLeft size={16} /> Back to all articles
       </Link>
 
-      {/* Header Info */}
+      {/* Header & Meta Information */}
       <header className="space-y-6 mb-10">
         <div className="flex flex-wrap items-center gap-3">
           <span className="bg-emerald-500/90 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
             {post.category}
           </span>
-          <span className="text-xs text-white/50 flex items-center gap-1">
+          <span className="text-xs text-white/60 flex items-center gap-1">
             <Clock size={14} className="text-emerald-400" /> {post.readTime}
           </span>
-          <span className="text-xs text-white/50 flex items-center gap-1">
+          <span className="text-xs text-white/60 flex items-center gap-1">
             <Calendar size={14} className="text-emerald-400" /> Published: {post.publishedDate}
           </span>
+          {post.updatedDate && (
+            <span className="text-xs text-emerald-400/80 flex items-center gap-1 font-medium bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
+              <RefreshCw size={12} /> Updated: {post.updatedDate}
+            </span>
+          )}
         </div>
 
         <GradientText
@@ -162,16 +170,16 @@ export default function BlogPostPage() {
           {post.title}
         </GradientText>
 
-        {/* Author Details */}
-        <div className="flex items-center gap-3 pt-2 border-t border-white/10">
+        {/* Author Bio Snippet */}
+        <div className="flex items-center gap-3 pt-4 border-t border-white/10">
           <div className="w-10 h-10 rounded-full bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-400 font-bold text-sm">
             {post.author.charAt(0)}
           </div>
           <div>
             <p className="text-sm font-semibold text-white flex items-center gap-1">
-              <User size={14} className="text-emerald-400" /> {post.author}
+              <User size={14} className="text-emerald-400" /> Authored by {post.author}
             </p>
-            <p className="text-xs text-white/50">Lead Trader & Technical Educator</p>
+            <p className="text-xs text-white/50">{post.authorBio}</p>
           </div>
         </div>
       </header>
@@ -189,7 +197,7 @@ export default function BlogPostPage() {
       {post.quickAnswer && (
         <section className="bg-emerald-950/40 border border-emerald-500/40 rounded-2xl p-6 mb-10 backdrop-blur-md shadow-[0_0_30px_rgba(16,185,129,0.15)]">
           <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm uppercase tracking-wider mb-2">
-            <BookOpen size={18} /> Quick Summary / Answer
+            <BookOpen size={18} /> Quick Answer / Summary
           </div>
           <p className="text-white/90 text-sm sm:text-base leading-relaxed font-medium">
             {post.quickAnswer}
@@ -224,7 +232,7 @@ export default function BlogPostPage() {
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 
-      {/* FAQ Section (AEO) */}
+      {/* FAQ Section (AEO - Visible FAQ) */}
       {post.faq && post.faq.length > 0 && (
         <section className="my-16 border-t border-white/10 pt-12">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8 flex items-center gap-3">
@@ -248,8 +256,8 @@ export default function BlogPostPage() {
       {/* Sources & References */}
       {post.sources && post.sources.length > 0 && (
         <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 mb-12">
-          <h3 className="text-sm font-bold text-white/60 uppercase tracking-wider mb-3">
-            References & Reliable Sources
+          <h3 className="text-xs font-bold text-white/60 uppercase tracking-wider mb-3">
+            References & External Sources
           </h3>
           <ul className="space-y-2">
             {post.sources.map((src, i) => (
@@ -290,10 +298,10 @@ export default function BlogPostPage() {
         </button>
       </div>
 
-      {/* Related Articles */}
+      {/* Related Articles (Topical Cluster Links) */}
       {relatedArticles.length > 0 && (
         <section className="border-t border-white/10 pt-12">
-          <h3 className="text-xl font-bold text-white mb-6">Related Guides & Insights</h3>
+          <h3 className="text-xl font-bold text-white mb-6">Related Trading Guides</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {relatedArticles.map((rel) => (
               <Link

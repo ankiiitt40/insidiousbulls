@@ -13,6 +13,20 @@ import BlogPostPage from "./Pages/BlogPostPage";
 import CustomCursor from "./components/ui/CustomCursor";
 import MobileCTA from "./components/ui/MobileCTA";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant"
+    });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   const location = useLocation();
 
@@ -58,6 +72,7 @@ function App() {
 
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden bg-[#050505]">
+      <ScrollToTop />
       {/* Global UI Add-ons */}
       <CustomCursor />
       <MobileCTA />
