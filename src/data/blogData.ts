@@ -460,56 +460,180 @@ export const BLOG_POSTS: BlogPost[] = [
     id: "3",
     slug: "1-2-risk-reward-rule",
     title: "The 1:2 Risk-to-Reward Rule: How to Protect Your Capital in Volatile Markets",
-    metaTitle: "The 1:2 Risk-to-Reward Ratio Guide | Insidious Bulls",
-    metaDescription: "Master the 1:2 Risk-to-Reward rule in Forex & Crypto trading. Protect capital, calculate position sizes, and build long-term profitability.",
-    excerpt: "Learn how the 1:2 risk-to-reward framework works, how expectancy affects trading outcomes, and how disciplined risk management can shape a trading plan.",
+    metaTitle: "The 1:2 Risk-to-Reward Rule: How It Works in Trading",
+    metaDescription: "Learn how the 1:2 risk-to-reward ratio works, how to calculate it, understand break-even win rate, position sizing, and build a disciplined trading risk framework.",
+    excerpt: "Learn how the 1:2 risk-to-reward framework works, how break-even win rates are calculated, and how disciplined position sizing can help structure trading risk.",
     category: "Risk Management",
-    tags: ["Risk Management", "Trading Strategy", "Position Sizing", "Capital Protection"],
+    tags: ["Risk Management", "Trading", "Position Sizing", "Risk Reward", "Forex", "Price Action"],
     author: "Shubham",
     authorBio: "Lead Educator & Trader at Insidious Bulls, specializing in Price Action methodology and risk management across Forex, Crypto, and Commodities.",
     publishedDate: "2026-08-04",
     updatedDate: "2026-08-09",
-    readTime: "6 min read",
+    readTime: "12 min read",
     featuredImage: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80",
-    quickAnswer: "The 1:2 Risk-to-Reward Rule is a fundamental capital management principle where a trader risks 1 unit of capital to potentially gain 2 units of reward on every trade setup. This mathematical edge ensures long-term profitability even with a win rate below 50%.",
+    quickAnswer: "A 1:2 risk-to-reward ratio means that a trader is planning to risk 1 unit of capital to potentially make 2 units if the trade reaches its target. For example, if the planned loss is ₹1,000, a 1:2 setup has a planned potential reward of ₹2,000. The ratio does not guarantee profitability; actual results depend on factors such as win rate, execution, fees, slippage, market conditions, and whether the trading strategy has positive expectancy.",
     keyTakeaways: [
-      "Risking 1% to 2% of total account balance per trade prevents catastrophic drawdowns.",
-      "A 1:2 Risk-to-Reward ratio allows a trader to achieve overall profitability with only a 40% win rate.",
-      "Position sizing must be calculated dynamically based on stop-loss distance, not fixed lot sizes.",
-      "Emotional discipline and hard stop-loss enforcement are mandatory for long-term trader survival."
+      "A 1:2 risk-to-reward ratio means risking 1 unit to target 2 units.",
+      "It does not mean every trade has a 1:2 probability of winning.",
+      "A 1:2 ratio has a theoretical 33.3% break-even win rate before costs if every winning trade earns exactly 2R and every losing trade loses exactly 1R.",
+      "Transaction costs, slippage, missed fills and inconsistent execution can raise the real break-even requirement.",
+      "Position size should be determined from the amount you are willing to lose and the distance to the stop—not simply from how much profit you want.",
+      "A stop-loss should have a logical relationship to the trade thesis rather than being placed randomly.",
+      "A high risk-to-reward ratio does not automatically mean a better trade.",
+      "Risk management is about controlling exposure, not eliminating losses.",
+      "The objective is not to win every trade. It is to create a repeatable process with controlled downside."
     ],
     content: `
-      <h2>How Does a 1:2 Risk-Reward Ratio Work?</h2>
-      <p>The Risk-to-Reward Ratio (RRR) measures the prospective loss relative to the potential gain on any executed trade. In a 1:2 risk-to-reward setup, if your stop loss risks ₹1,000, your profit target aims to capture ₹2,000.</p>
+      <h2>What Is a Risk-to-Reward Ratio?</h2>
+      <p>The risk-to-reward ratio (commonly abbreviated as R:R or R/R) compares the amount a trader is willing to lose on a trade with the potential profit they are targeting.</p>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Risk = Potential Loss | Reward = Potential Gain | Planned Risk: ₹1,000 → Target: ₹2,000 = 1:2 R:R</pre>
+      <p>The ratio tells you how much potential reward is being targeted relative to the amount of risk. It does not tell you the probability that the target will be reached.</p>
 
-      <h2>The Mathematics Behind Profitability</h2>
-      <p>Consider 10 executed trades using a 1:2 Risk-to-Reward ratio with a conservative 40% win rate (4 wins, 6 losses):</p>
-      <ul>
-        <li><strong>4 Winning Trades (+2R each):</strong> +8R (+ ₹8,000)</li>
-        <li><strong>6 Losing Trades (-1R each):</strong> -6R (- ₹6,000)</li>
-        <li><strong>Net Profit:</strong> +2R (+ ₹2,000)</li>
-      </ul>
-      <p>Despite losing 6 out of 10 trades, the trading portfolio remains net profitable due to positive mathematical expectancy.</p>
+      <h2>What Does 1:2 Risk-to-Reward Mean?</h2>
+      <p>For every ₹1 you are willing to risk, your planned potential reward is ₹2.</p>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-left text-xs sm:text-sm border-collapse border border-white/10">
+          <thead>
+            <tr class="bg-white/10 text-emerald-400">
+              <th class="p-3 border border-white/10">Planned Risk</th>
+              <th class="p-3 border border-white/10">Potential Reward</th>
+              <th class="p-3 border border-white/10">Ratio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">₹500</td>
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">₹1,000</td>
+              <td class="p-3 border border-white/10 font-bold">1:2</td>
+            </tr>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">₹1,000</td>
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">₹2,000</td>
+              <td class="p-3 border border-white/10 font-bold">1:2</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">₹2,500</td>
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">₹5,000</td>
+              <td class="p-3 border border-white/10 font-bold">1:2</td>
+            </tr>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">₹5,000</td>
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">₹10,000</td>
+              <td class="p-3 border border-white/10 font-bold">1:2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <h2>Position Sizing Formula</h2>
-      <p>Never pick arbitrary lot sizes. Calculate your position size using the formula:</p>
-      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Position Size = (Account Balance × Risk %) / (Entry Price - Stop Loss Price)</pre>
+      <h2>How to Calculate a 1:2 Risk-to-Reward Ratio</h2>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Risk-to-Reward Ratio = Potential Loss : Potential Profit | R Multiple = Potential Reward ÷ Potential Risk</pre>
+      <p><strong>Example:</strong> Entry = ₹500, Stop = ₹490 (Risk = ₹10), Target = ₹520 (Reward = ₹20). ₹20 ÷ ₹10 = 2 → 1:2 Risk-to-Reward.</p>
 
-      <h2>Rule of Thumb: Limit Risk to 1-2% Per Trade</h2>
-      <p>Professional risk management dictates that no single trade execution should risk more than 1% to 2% of overall trading capital. This buffers your portfolio against consecutive drawdown streaks.</p>
+      <h2>What Is 1R?</h2>
+      <p>1R represents the predefined amount you planned to risk on a trade (e.g. 1R = ₹1,000). A trade returning +₹2,000 is expressed as <strong>+2R</strong>. This standardizes performance tracking across trades of different sizes.</p>
+
+      <h2>The 33.3% Break-Even Win Rate</h2>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Break-even Win Rate = Risk ÷ (Risk + Reward) = 1 ÷ (1 + 2) = 33.33%</pre>
+      <p>If you win 1 trade (+2R) and lose 2 trades (-2R), net result is 0R over 3 total trades (1 ÷ 3 = 33.33% break-even win rate before trading costs).</p>
+
+      <h2>Can You Be Profitable With a 40% Win Rate?</h2>
+      <p>Potentially yes! Over 100 trades with a 40% win rate: 40 winning trades (+2R each = +80R) minus 60 losing trades (-1R each = -60R) leaves a net result of <strong>+20R</strong> (+0.20R expectancy per trade) before trading costs and slippage.</p>
+
+      <h2>Risk-to-Reward vs. Win Rate</h2>
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-left text-xs sm:text-sm border-collapse border border-white/10">
+          <thead>
+            <tr class="bg-white/10 text-emerald-400">
+              <th class="p-3 border border-white/10">Risk : Reward</th>
+              <th class="p-3 border border-white/10">Approx. Theoretical Break-even Win Rate*</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="p-3 border border-white/10 font-bold">1:1</td><td class="p-3 border border-white/10 font-mono text-emerald-400">50.0%</td></tr>
+            <tr class="bg-white/[0.02]"><td class="p-3 border border-white/10 font-bold">1:1.5</td><td class="p-3 border border-white/10 font-mono text-emerald-400">40.0%</td></tr>
+            <tr><td class="p-3 border border-white/10 font-bold">1:2</td><td class="p-3 border border-white/10 font-mono text-emerald-400">33.3%</td></tr>
+            <tr class="bg-white/[0.02]"><td class="p-3 border border-white/10 font-bold">1:2.5</td><td class="p-3 border border-white/10 font-mono text-emerald-400">28.6%</td></tr>
+            <tr><td class="p-3 border border-white/10 font-bold">1:3</td><td class="p-3 border border-white/10 font-mono text-emerald-400">25.0%</td></tr>
+            <tr class="bg-white/[0.02]"><td class="p-3 border border-white/10 font-bold">1:4</td><td class="p-3 border border-white/10 font-mono text-emerald-400">20.0%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-white/50">*Theoretical figures before fees, spreads, and slippage.</p>
+
+      <h2>How to Calculate Position Size</h2>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Position Size = Maximum Planned Risk ÷ Risk Per Unit (e.g. ₹1,000 risk ÷ ₹20 risk per unit = 50 units)</pre>
+      <p>CME Group's risk-management educational material emphasizes establishing your stop-loss distance and acceptable account risk <strong>before</strong> determining position size.</p>
+
+      <h2>Where Should You Place Your Stop Loss?</h2>
+      <p>A stop-loss should be placed at a logical level where the trade thesis becomes invalid—not at an arbitrary distance just to force a 1:2 ratio.</p>
+
+      <h2>The Role of Leverage & Slippage</h2>
+      <p>Leverage magnifies capital exposure and loss potential. Slippage, execution delays, and market gaps mean real-world losses can exceed planned stop prices. Backtesting must factor in execution friction.</p>
+
+      <h2>Common 1:2 Risk-Management Mistakes</h2>
+      <ol>
+        <li><strong>Forcing Every Trade Into 1:2:</strong> Don't distort technical levels to produce an artificial ratio.</li>
+        <li><strong>Moving Stops to Claim Better R:R:</strong> Moving stops closer makes them hit more easily.</li>
+        <li><strong>Setting Unrealistic Targets:</strong> A 5R target is useless if historical win rate drops to near zero.</li>
+        <li><strong>Ignoring Spreads & Commissions:</strong> Transaction costs erode theoretical R multiples.</li>
+        <li><strong>Increasing Size After a Loss:</strong> Revenge sizing creates destructive drawdowns.</li>
+        <li><strong>Confusing R:R With Win Probability:</strong> R:R describes upside/downside, not win likelihood.</li>
+      </ol>
+
+      <h2>Building a Disciplined Risk Management Plan</h2>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">TRADING IDEA → MARKET CONTEXT → INVALIDATION → STOP LOSS → MAX ACCOUNT RISK → POSITION SIZE → TARGET → RISK:REWARD → EXECUTION → JOURNAL</pre>
+
+      <h2>Final Takeaway</h2>
+      <p>The 1:2 risk-to-reward ratio is a structured framework for evaluating trade setups, not a magic profit guarantee. Define your loss before chasing profit, and ensure no single trade dictates the fate of your trading account.</p>
     `,
     faq: [
       {
-        question: "How does a 1:2 risk-reward ratio work?",
-        answer: "A 1:2 risk-reward ratio means for every $1 you risk on a trade stop-loss, your profit target aims for $2 in reward."
+        question: "What is a 1:2 risk-to-reward ratio?",
+        answer: "A 1:2 risk-to-reward ratio means that for every 1 unit of planned risk, the trader is targeting 2 units of potential reward. For example, risking ₹1,000 for a potential ₹2,000 reward represents a 1:2 setup."
       },
       {
-        question: "Why is risk management more important than win rate?",
-        answer: "Because high win rates without risk control can be wiped out by a single unmanaged bad trade, whereas strict risk-reward mathematical edge guarantees sustainability over a series of trades."
+        question: "Is a 1:2 risk-to-reward ratio good?",
+        answer: "A 1:2 ratio can be useful, but its effectiveness depends on whether the trading strategy can realistically achieve its target while maintaining acceptable win rates and execution quality."
+      },
+      {
+        question: "What win rate do I need for a 1:2 risk-reward ratio?",
+        answer: "If every losing trade is exactly -1R and every winning trade is exactly +2R, the theoretical break-even win rate is approximately 33.3% before trading costs."
+      },
+      {
+        question: "Can I be profitable with a 40% win rate?",
+        answer: "Potentially yes. If a strategy genuinely averages +2R on winners and -1R on losers, a 40% win rate produces positive mathematical expectancy (+0.20R per trade) before costs."
+      },
+      {
+        question: "Is 1:3 better than 1:2?",
+        answer: "Not automatically. A 1:3 setup has a lower theoretical break-even win rate, but a larger target may be harder for a particular strategy to reach."
+      },
+      {
+        question: "Should I always use 1:2 risk-to-reward?",
+        answer: "No. A fixed ratio should not override market structure or the logic of your setup."
+      },
+      {
+        question: "How do I calculate position size?",
+        answer: "Position Size = Maximum Planned Risk ÷ Risk Per Unit. Determine your stop-loss distance and acceptable capital risk first."
+      },
+      {
+        question: "Does risk-to-reward guarantee profit?",
+        answer: "No. Risk-to-reward describes a planned relationship between potential loss and reward. It does not guarantee market direction or strategy profitability."
+      },
+      {
+        question: "Does a stop-loss guarantee the exact loss amount?",
+        answer: "No. Gaps, slippage, and liquidity conditions can cause execution prices to differ from planned stop levels."
+      },
+      {
+        question: "Does leverage improve risk-to-reward?",
+        answer: "No. Leverage changes capital exposure, which magnifies both gains and losses. It does not improve trade setup quality."
       }
     ],
     sources: [
-      { title: "Investopedia - Risk-Reward Ratio", url: "https://www.investopedia.com/terms/r/riskrewardratio.asp" }
+      { title: "CME Group - Risk Management and Your Trade Plan", url: "https://www.cmegroup.com/" },
+      { title: "CME Group - Proper Position Size & Stop Loss Logic", url: "https://www.cmegroup.com/" },
+      { title: "CME Group - Position and Risk Management Guide", url: "https://www.cmegroup.com/" },
+      { title: "IG - Risk-Reward Ratio & Leverage Dynamics", url: "https://www.ig.com/" },
+      { title: "U.S. CFTC - Investor Education on Leveraged Trading", url: "https://www.cftc.gov/" }
     ],
     relatedPosts: ["mastering-price-action-trading", "forex-vs-crypto-trading", "complete-forex-trading-course-guide-2026"]
   },
