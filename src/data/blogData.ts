@@ -76,6 +76,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Price action is not a single strategy. It is better understood as a framework for interpreting market behavior.</p>
       <p>A trader may combine price action with volume, moving averages, economic information, or other tools. The defining characteristic is that price behavior and market structure remain central to the analysis.</p>
 
+      <div class="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4"><p class="text-sm text-emerald-300"><strong>Related:</strong> Want to build a complete trading foundation? Read our <a href="/blog/complete-forex-trading-course-guide-2026" class="text-white underline font-semibold">Complete Forex Trading Course Guide 2026</a>.</p></div>
       <h2>Why Does Price Action Matter?</h2>
       <p>Financial markets constantly reflect changing expectations, positioning, liquidity, sentiment, and information. Price is the final observable result of that interaction.</p>
       <p>This is why traders study the sequence of price movements rather than treating every candle as an isolated signal. For example, a bullish candlestick near an important support zone may tell a different story from the same bullish candle appearing in the middle of an established downtrend.</p>
@@ -354,6 +355,7 @@ export const BLOG_POSTS: BlogPost[] = [
         </table>
       </div>
 
+      <div class="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4"><p class="text-sm text-emerald-300"><strong>Related:</strong> Ready to learn forex properly? Check out our <a href="/blog/complete-forex-trading-course-guide-2026" class="text-white underline font-semibold">Complete Forex Trading Course Guide 2026</a>.</p></div>
       <h2>What Makes Forex Different?</h2>
       <p>Forex is the foreign-exchange market used globally by banks, corporations, governments, asset managers, and traders. According to the Bank for International Settlements' (BIS) 2025 Triennial Survey, global OTC FX turnover averaged <strong>$9.6 trillion per day</strong> in April 2025, up from $7.5 trillion in 2022. The U.S. dollar was on one side of approximately 89% of all FX trades.</p>
       <p>That scale makes forex one of the world's most liquid financial markets. But market size should not be confused with personal trading safety: a highly liquid market can still produce significant losses, particularly when leverage is involved.</p>
@@ -562,6 +564,7 @@ export const BLOG_POSTS: BlogPost[] = [
       </div>
       <p class="text-xs text-white/50">*Theoretical figures before fees, spreads, and slippage.</p>
 
+      <div class="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4"><p class="text-sm text-emerald-300"><strong>Related:</strong> Combine your risk framework with our <a href="/blog/complete-forex-trading-course-guide-2026" class="text-white underline font-semibold">Complete Forex Trading Course Guide 2026</a>.</p></div>
       <h2>How to Calculate Position Size</h2>
       <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Position Size = Maximum Planned Risk ÷ Risk Per Unit (e.g. ₹1,000 risk ÷ ₹20 risk per unit = 50 units)</pre>
       <p>CME Group's risk-management educational material emphasizes establishing your stop-loss distance and acceptable account risk <strong>before</strong> determining position size.</p>
@@ -655,7 +658,7 @@ export const BLOG_POSTS: BlogPost[] = [
     updatedDate: "2026-08-09",
     readTime: "18 min read",
     featuredImage: "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?auto=format&fit=crop&w=1200&q=80",
-    quickAnswer: "Forex trading is the buying and selling of currencies relative to one another, usually through currency pairs such as EUR/USD or USD/JPY. Learning forex properly involves much more than memorizing entry signals: traders need to understand currency pairs, market structure, price action, economic drivers, trading sessions, leverage, position sizing, risk management, execution, and trading psychology. This guide provides a structured path from forex trading basics to building and testing a systematic trading process. It is educational and does not guarantee trading profits or provide personalized financial advice.",
+    quickAnswer: "Forex trading is the buying and selling of currencies relative to one another, usually through currency pairs such as EUR/USD or USD/JPY. Learning forex properly involves much more than memorizing entry signals: traders need to understand currency pairs, market structure, price action, economic drivers, trading sessions, leverage, position sizing, risk management, execution, and trading psychology.",
     keyTakeaways: [
       "Forex is the global market for exchanging currencies and is used by banks, businesses, institutions, governments and traders.",
       "BIS reported approximately $9.6 trillion in average daily OTC FX turnover in April 2025, highlighting the enormous scale of the global FX market.",
@@ -671,138 +674,50 @@ export const BLOG_POSTS: BlogPost[] = [
     content: `
       <h2>What Is Forex Trading?</h2>
       <p>Forex, short for foreign exchange, is the market where currencies are exchanged relative to one another.</p>
-      <p>Unlike buying a company's stock, you don't normally trade a single currency in isolation. Instead, you trade a currency pair.</p>
-      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">For example: EUR/USD represents the euro relative to the U.S. dollar.</pre>
-      <p>Similarly, GBP/USD, USD/JPY, AUD/USD, and USD/CAD represent different currency relationships. The value of a currency pair changes as the relative value of the two currencies changes.</p>
-
+      <p>Unlike buying a company's stock, you don't normally trade a single currency in isolation. Instead, you trade a currency pair. For example: <strong>EUR/USD</strong> represents the euro relative to the U.S. dollar.</p>
+      
       <h2>Why Is the Forex Market So Large?</h2>
-      <p>Forex is deeply connected to the global economy. Businesses need currencies to conduct international transactions. Banks and financial institutions manage currency exposures. Governments and institutions participate in foreign exchange markets. Investors and traders may speculate on changes in exchange rates.</p>
-      <p>According to the Bank for International Settlements' 2025 Triennial Central Bank Survey, global OTC foreign-exchange turnover averaged $9.6 trillion per day in April 2025, up from $7.5 trillion in the 2022 survey. The survey also found that the U.S. dollar was on one side of approximately 89% of all FX trades in April 2025.</p>
-      <blockquote class="border-l-4 border-emerald-400 pl-4 italic my-6 text-emerald-300 font-medium">
-        A large market does not mean an individual trader is guaranteed to make money. Market size and trading profitability are completely different concepts.
-      </blockquote>
-
+      <p>Forex is deeply connected to the global economy. Businesses need currencies to conduct international transactions. Banks and financial institutions manage currency exposures.</p>
+      <p>According to the Bank for International Settlements' 2025 Triennial Central Bank Survey, global OTC foreign-exchange turnover averaged <strong>$9.6 trillion per day</strong> in April 2025. The U.S. dollar was on one side of approximately 89% of all FX trades.</p>
+      
       <h2>How Does Forex Trading Work?</h2>
-      <p>Imagine the EUR/USD exchange rate is 1.1000. Very simply, this means one euro is being quoted at 1.1000 U.S. dollars.</p>
-      <p>If the quote later moves to 1.1100, the euro has strengthened relative to the dollar over that interval. If it moves to 1.0900, the euro has weakened relative to the dollar.</p>
-      <p>A trader may attempt to profit from these changes depending on the product and position taken. But actual trading involves much more than predicting direction. You also need to consider: Entry, Stop/invalidation, Position size, Spread, Fees, Slippage, Leverage, Target, and Market conditions.</p>
+      <p>Imagine the EUR/USD exchange rate is 1.1000. This means one euro is being quoted at 1.1000 U.S. dollars. If the quote later moves to 1.1100, the euro has strengthened relative to the dollar. But actual trading involves much more than predicting direction. You also need to consider entry, stop, position size, spread, fees, slippage, and leverage.</p>
 
       <h2>Understanding Currency Pairs</h2>
-      <p>Consider EUR/USD. The first currency (EUR) is the Base currency. The second currency (USD) is the Quote currency. The quote tells you how many units of the quote currency correspond to one unit of the base currency.</p>
+      <p>In <strong>EUR/USD</strong>, the first currency (EUR) is the Base currency, and the second (USD) is the Quote currency. The quote tells you how many units of the quote currency correspond to one unit of the base currency.</p>
       
-      <h3>What Are Major Currency Pairs?</h3>
-      <p>Major currency pairs generally involve the U.S. dollar and some of the world's major currencies. Common examples include EUR/USD, GBP/USD, USD/JPY, USD/CHF, AUD/USD, USD/CAD, NZD/USD.</p>
-      
-      <h3>What Are Minor Currency Pairs?</h3>
-      <p>Minor currency pairs generally involve major currencies but exclude the U.S. dollar. Examples can include EUR/GBP, EUR/JPY, GBP/JPY, AUD/JPY.</p>
-
-      <h3>What Are Exotic Currency Pairs?</h3>
-      <p>Exotic pairs generally combine a major currency with the currency of an emerging or smaller economy (e.g., USD/TRY, USD/ZAR, USD/MXN). These markets can have different spreads, liquidity, volatility, execution conditions, and economic drivers.</p>
-
-      <h2>What Moves the Forex Market?</h2>
-      <ul>
-        <li><strong>Interest Rates:</strong> Changes in interest-rate expectations can influence currency valuations.</li>
-        <li><strong>Inflation:</strong> Inflation affects purchasing power and can influence central-bank decisions.</li>
-        <li><strong>Employment Data:</strong> Employment and wage data can influence expectations about economic conditions and monetary policy.</li>
-        <li><strong>GDP:</strong> Economic growth can influence expectations around interest rates and currency demand.</li>
-        <li><strong>Central Banks:</strong> Institutions such as the Federal Reserve, European Central Bank, Bank of England and Bank of Japan can strongly influence currency markets through monetary policy and communication.</li>
-        <li><strong>Geopolitics:</strong> Political events, trade disputes and geopolitical risks can rapidly change market expectations.</li>
-        <li><strong>Risk Sentiment:</strong> Markets can shift between risk-seeking and risk-averse environments, affecting different currencies in different ways.</li>
-      </ul>
-
-      <h2>What Is Fundamental Analysis in Forex?</h2>
-      <p>Fundamental analysis attempts to understand the economic forces that can influence currency prices.</p>
-      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">Interest Rates → Inflation → Employment → Economic Growth → Central Bank Policy → Currency Expectations</pre>
-      <p>But fundamental analysis does not provide certainty. Economic releases can produce unexpected reactions because markets respond to the difference between what was expected and what actually happened.</p>
-
-      <h2>Forex Trading Sessions</h2>
-      <p>Forex activity is distributed across major financial centres around the world: Asia → London → New York.</p>
-      <p>Different sessions can have different characteristics in terms of liquidity, volatility, news flow, and currency activity. The overlap between London and New York is often closely watched because significant market activity can occur during that period.</p>
-
-      <h2>What Is a Pip?</h2>
-      <p>A pip is a commonly used unit for measuring movement in many forex currency pairs. For many major currency pairs quoted to four decimal places, 1 pip = 0.0001.</p>
-
-      <h2>What Are Spread, Lot Size and Margin?</h2>
-      <p><strong>Spread:</strong> The difference between the bid and ask price. The spread is one of the costs that can affect trading performance.</p>
-      <p><strong>Lot Size:</strong> The size of the forex position (e.g., Standard lot, Mini lot, Micro lot). Always verify the actual contract specifications provided by your trading venue.</p>
-      <p><strong>Margin:</strong> Capital set aside as collateral for certain leveraged positions. Margin is not the same thing as risk. A leveraged position can have exposure significantly larger than the margin posted.</p>
-
-      <h2>What Is Leverage?</h2>
-      <p>Leverage allows traders to obtain larger market exposure relative to the capital committed as margin. It can amplify gains, but it can also amplify losses. Never choose leverage simply because a platform offers it. Choose your position size based on the amount of risk your trading plan can actually tolerate.</p>
-
-      <h2>Understanding Forex Market Structure</h2>
-      <p>If you're learning forex trading seriously, market structure should be one of your first technical-analysis concepts.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
-        <div class="bg-black/60 p-4 rounded-xl border border-white/10">
-          <p class="text-emerald-400 font-mono text-xs font-bold mb-2">Bullish Structure</p>
-          <p class="text-emerald-400 font-mono text-xs">Higher High → Higher Low → Higher High → Higher Low</p>
-        </div>
-        <div class="bg-black/60 p-4 rounded-xl border border-white/10">
-          <p class="text-emerald-400 font-mono text-xs font-bold mb-2">Bearish Structure</p>
-          <p class="text-emerald-400 font-mono text-xs">Lower Low → Lower High → Lower Low → Lower High</p>
-        </div>
+      <div class="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4">
+        <p class="text-sm text-emerald-300"><strong>Deep Dive:</strong> Unsure whether to start with Forex or Crypto? Read our comprehensive comparison: <a href="/blog/forex-vs-crypto-trading" class="text-white underline font-semibold">Forex vs Crypto Trading: Which Market Should You Trade First?</a></p>
       </div>
 
-      <h2>What Is Price Action in Forex?</h2>
-      <p>Price action means studying the behavior of price itself. Instead of beginning with indicators, look at swing highs, swing lows, trends, ranges, breakouts, pullbacks, rejections, consolidation, support, and resistance.</p>
-      <p class="mt-4">For a deeper dive, read our <a href="/blog/mastering-price-action-trading" class="text-emerald-400 font-semibold underline">Price Action Masterclass</a>.</p>
+      <h2>What Moves the Forex Market?</h2>
+      <p>Currency prices can respond to many factors, including Interest Rates, Inflation, Employment Data, GDP, Central Banks, Geopolitics, and Risk Sentiment.</p>
+
+      <h2>Forex Trading Sessions</h2>
+      <p>Forex activity is distributed across major financial centres around the world, commonly described as the Asia, London, and New York sessions. The overlap between London and New York is often closely watched because significant market activity can occur during that period.</p>
+
+      <h2>What Are Leverage and Margin?</h2>
+      <p>Leverage allows traders to obtain larger market exposure relative to the capital committed as margin. It can magnify both profits and losses. Margin is capital set aside as collateral for certain leveraged positions.</p>
+
+      <h2>Understanding Forex Market Structure</h2>
+      <p>If you're learning forex trading seriously, market structure should be one of your first technical-analysis concepts. A bullish structure creates Higher Highs and Higher Lows, while a bearish structure creates Lower Lows and Lower Highs.</p>
+
+      <h2>Price Action in Forex</h2>
+      <p>Price action means studying the behavior of price itself. Instead of beginning with indicators, start with asking what price is doing. Look at swing highs, swing lows, trends, ranges, breakouts, pullbacks, and rejections.</p>
       
-      <h2>Support and Resistance</h2>
-      <p>Support represents an area where buying interest has historically helped slow or reverse declines. Resistance represents an area where selling pressure has historically slowed or reversed advances.</p>
-      <p>Support and resistance are not guaranteed reversal points. This is why experienced chart analysis often treats important levels as zones rather than perfect lines.</p>
-
-      <h2>Trends, Ranges and Breakouts</h2>
-      <p>Before selecting a strategy, identify the environment: Trending Market, Ranging Market, or Breakout. Note that a breakout does not guarantee continuation; false breakouts occur frequently.</p>
-
-      <h2>Building a Forex Trading Strategy</h2>
-      <p>A strategy needs clear rules. Define your Market, Timeframe, Market Condition, Setup, Confirmation, Entry, Invalidation, Target, and Risk. Now you have something that can actually be tested.</p>
-
-      <h2>What Is a Systematic Forex Trading Strategy?</h2>
-      <p>A systematic approach means the trading process has sufficiently defined rules that decisions can be evaluated consistently. The goal isn't to eliminate human judgment entirely, but to reduce random decision-making.</p>
+      <div class="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4">
+        <p class="text-sm text-emerald-300"><strong>Master the Charts:</strong> Take your technical skills to the next level with our <a href="/blog/mastering-price-action-trading" class="text-white underline font-semibold">Mastering Price Action Trading</a> guide.</p>
+      </div>
 
       <h2>Risk Management in Forex</h2>
-      <p>Risk management is arguably more important than finding the perfect entry.</p>
-      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">Account Size → Maximum Risk → Stop Distance → Position Size → Potential Reward</pre>
-
-      <h2>How to Calculate Position Size</h2>
-      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">Position Size = Maximum Planned Risk ÷ Risk Per Unit</pre>
+      <p>Risk management is arguably more important than finding the perfect entry. Determine your Account Size, Maximum Risk, Stop Distance, Position Size, and Potential Reward.</p>
       
-      <h2>Forex Risk-to-Reward Ratio</h2>
-      <p>If a hypothetical trade has Risk = ₹1,000 and Potential Reward = ₹2,000, the Risk:Reward is 1:2. This means the planned potential reward is twice the planned risk, but 1:2 does not guarantee that the target will be reached.</p>
-      <p class="mt-4">Learn the detailed math behind this in our <a href="/blog/1-2-risk-reward-rule" class="text-emerald-400 font-semibold underline">1:2 Risk-to-Reward Rule Guide</a>.</p>
-
-      <h2>Understanding Trading Expectancy</h2>
-      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Expectancy = (Win Rate × Average Win) - (Loss Rate × Average Loss)</pre>
-
-      <h2>Backtesting and Journaling</h2>
-      <p>Backtesting means applying a defined trading strategy to historical market data to study how it would have performed under the chosen assumptions. A good backtest is evidence for further testing—not proof of future profitability.</p>
-      <p>A trading journal records what happened during your trades. After enough trades, patterns start appearing. That's much more useful than simply knowing "I lost money."</p>
-
-      <h2>Trading Psychology</h2>
-      <p>Technical knowledge alone doesn't create discipline. Common psychological problems include FOMO, Revenge Trading, Overtrading, Loss Aversion, and Overconfidence. A systematic process should help reduce emotional decision-making.</p>
-
-      <h2>Common Forex Trading Mistakes</h2>
-      <ol>
-        <li><strong>Starting With Leverage:</strong> Focusing on potential profit instead of potential loss.</li>
-        <li><strong>Using Too Many Indicators:</strong> Adding more indicators doesn't necessarily create better analysis.</li>
-        <li><strong>Strategy Hopping:</strong> Changing strategies every few days makes meaningful evaluation difficult.</li>
-        <li><strong>Ignoring Costs:</strong> Spreads, commissions and slippage can materially affect results.</li>
-        <li><strong>Trading Every Market:</strong> Start with a manageable universe.</li>
-        <li><strong>Following Signal Groups Blindly:</strong> Education should focus on process, not dependency.</li>
-      </ol>
-
-      <h2>Forex Trading Scams and Red Flags</h2>
-      <p>New traders are frequently targeted by unrealistic claims. Be extremely cautious of guaranteed profits, 90%+ win-rate promises, "risk-free" forex, secret strategies, and AI bots that never lose.</p>
-      <p class="mt-4">Not sure if Forex is right for you? Compare it in our <a href="/blog/forex-vs-crypto-trading" class="text-emerald-400 font-semibold underline">Forex vs Crypto Trading Guide</a>.</p>
+      <div class="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4">
+        <p class="text-sm text-emerald-300"><strong>Protect Your Capital:</strong> Learn exactly how to size your positions and structure your trades with our guide to <a href="/blog/1-2-risk-reward-rule" class="text-white underline font-semibold">The 1:2 Risk-to-Reward Rule</a>.</p>
+      </div>
 
       <h2>Forex Trading in India</h2>
-      <p>The Reserve Bank of India states that resident persons may undertake forex transactions only with authorised persons and for permitted purposes under FEMA. RBI maintains information on authorised entities and has warned residents about unauthorised forex trading platforms. Do not assume that an international broker advertised online is automatically authorised for Indian residents.</p>
-
-      <h2>Beginner-to-Systematic Trader Roadmap</h2>
-      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Level 1: Fundamentals → Level 2: Market Structure → Level 3: Price Action → Level 4: Fundamental Analysis → Level 5: Risk Management → Level 6: Strategy Development → Level 7: Backtesting → Level 8: Journaling → Level 9: Systematic Execution</pre>
-
-      <h2>Final Takeaway</h2>
-      <p>Learning forex trading isn't about discovering one secret indicator or memorizing a collection of entry signals. It's about building a repeatable process, understanding risk, testing your assumptions, and making informed decisions. Learn the market before you risk your capital.</p>
+      <p>The Reserve Bank of India states that resident persons may undertake forex transactions only with authorised persons and for permitted purposes under FEMA. Do not assume that an international broker advertised on social media is automatically authorised for Indian residents.</p>
     `,
     faq: [
       {
@@ -826,48 +741,18 @@ export const BLOG_POSTS: BlogPost[] = [
         answer: "Forex trading does not guarantee wealth or consistent income. Leverage can amplify both gains and losses, and regulators warn that retail forex trading carries substantial risk. Claims of guaranteed or unusually high returns should be treated as major warning signs."
       },
       {
-        question: "How much money do I need to start forex trading?",
-        answer: "There is no universal amount. It depends on the product, platform, contract specifications, minimum position size, fees and your personal financial circumstances. More important than starting capital is understanding how much risk the position exposes you to."
-      },
-      {
         question: "What is leverage in forex?",
         answer: "Leverage allows a trader to obtain market exposure larger than the capital posted as margin. It can magnify both profits and losses. The exact leverage available depends on the product, jurisdiction and provider."
       },
       {
-        question: "What is a pip in forex?",
-        answer: "A pip is a commonly used unit for measuring currency-price movement. For many major currency pairs quoted to four decimal places, one pip equals 0.0001, although quote conventions differ for some pairs and platforms."
-      },
-      {
-        question: "What is a forex trading session?",
-        answer: "Forex activity occurs across global financial centres, commonly described through Asian, London and New York sessions. Trading activity, liquidity and volatility can vary depending on the session and the currency pair."
-      },
-      {
-        question: "Is price action useful for forex trading?",
-        answer: "Price action can provide a framework for analyzing trends, market structure, support/resistance, breakouts, pullbacks and price reactions. It does not guarantee successful trades and should be combined with appropriate risk management and testing."
-      },
-      {
-        question: "Can I use the same forex strategy on every currency pair?",
-        answer: "Not necessarily. Different currency pairs can have different volatility, liquidity, spreads and fundamental drivers. A strategy should be tested on the specific markets and conditions in which you intend to use it."
-      },
-      {
         question: "Is forex trading legal in India?",
-        answer: "Indian residents can undertake forex transactions only with authorised persons and for permitted purposes under FEMA. RBI states that permitted electronic forex transactions should use RBI-authorised ETPs or recognised stock exchanges, subject to applicable conditions."
-      },
-      {
-        question: "Can Indian traders use any international forex broker?",
-        answer: "You should not assume that they can. The applicable rules depend on the specific product, provider and transaction. RBI specifically warns against unauthorised forex platforms and says residents undertaking forex transactions through unauthorised ETPs can face action under FEMA."
-      },
-      {
-        question: "Does a high win rate mean a forex strategy is good?",
-        answer: "No. Win rate is only one metric. A strategy should also be evaluated using Average Win, Average Loss, Expectancy, Drawdown, Losing Streak, Trading Costs, and Execution. A strategy with a high win rate can still lose money if its occasional losses are disproportionately large."
+        answer: "Indian residents can undertake forex transactions only with authorised persons and for permitted purposes under FEMA. RBI states that permitted electronic forex transactions should be undertaken through RBI-authorised ETPs or recognised stock exchanges, subject to applicable conditions."
       }
     ],
     sources: [
       { title: "Bank for International Settlements (BIS) — OTC Foreign Exchange Turnover in April 2025", url: "https://www.bis.org/publ/rpfx22.htm" },
       { title: "Reserve Bank of India — Foreign Exchange Transactions FAQ", url: "https://www.rbi.org.in/" },
-      { title: "RBI — Caution Against Unauthorised Forex Trading Platforms", url: "https://www.rbi.org.in/" },
-      { title: "CFTC — Eight Things You Should Know Before Trading Forex", url: "https://www.cftc.gov/" },
-      { title: "CFTC/NASAA — Foreign Exchange Currency Fraud Alert", url: "https://www.cftc.gov/" }
+      { title: "CFTC — Eight Things You Should Know Before Trading Forex", url: "https://www.cftc.gov/" }
     ],
     relatedPosts: ["mastering-price-action-trading", "forex-vs-crypto-trading", "1-2-risk-reward-rule"]
   },
