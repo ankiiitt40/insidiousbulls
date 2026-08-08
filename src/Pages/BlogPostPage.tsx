@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { BLOG_POSTS } from "../data/blogData";
 import SEO from "../components/SEO/SEO";
 import { Clock, Calendar, User, ArrowLeft, ArrowRight, CheckCircle2, BookOpen, ExternalLink, HelpCircle, AlertCircle, RefreshCw } from "lucide-react";
