@@ -12,6 +12,7 @@ import BlogPage from "./Pages/BlogPage";
 import BlogPostPage from "./Pages/BlogPostPage";
 import CustomCursor from "./components/ui/CustomCursor";
 import MobileCTA from "./components/ui/MobileCTA";
+import ErrorBoundary from "./components/ui/ErrorBoundary";
 
 // Global reference to Lenis for route synchronization
 let lenisInstance: Lenis | null = null;
@@ -102,23 +103,25 @@ function App() {
         <Navbar />
 
         <div className="pt-[80px] md:pt-[90px]">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={location.pathname}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-            >
-              <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/blog" element={<BlogPage />} />
-                <Route path="/blog/:slug" element={<BlogPostPage />} />
-              </Routes>
-            </motion.div>
-          </AnimatePresence>
+          <ErrorBoundary>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={location.pathname}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+              >
+                <Routes location={location} key={location.pathname}>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/blog" element={<BlogPage />} />
+                  <Route path="/blog/:slug" element={<BlogPostPage />} />
+                </Routes>
+              </motion.div>
+            </AnimatePresence>
+          </ErrorBoundary>
         </div>
       </div>
     </div>

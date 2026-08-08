@@ -164,7 +164,7 @@ export default function BlogPage() {
                 <div className="pt-4 border-t border-white/10 flex items-center justify-between">
                   <span className="text-xs text-white/40 flex items-center gap-1">
                     <Tag size={12} className="text-emerald-400" />
-                    {post.tags[0]}
+                    {post.tags && post.tags.length > 0 ? post.tags[0] : post.category}
                   </span>
 
                   <Link
