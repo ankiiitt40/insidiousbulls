@@ -554,7 +554,7 @@ function HomePage() {
                   rounded-3xl 
                   p-4 sm:p-8 md:p-12 
                   grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12
-                  bg-white/[0.02] backdrop-blur-md">
+                  bg-black/40">
 
     {/* INSIDIOUS BULLS SIDE */}
     <div className="border border-green-500/40 

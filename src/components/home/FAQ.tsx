@@ -28,7 +28,7 @@ export default function FAQ() {
       
       <div className="space-y-4">
         {faqData.map((item, i) => (
-          <div key={i} className="border border-white/10 rounded-2xl overflow-hidden bg-white/[0.02] backdrop-blur-md">
+          <div key={i} className="border border-white/10 rounded-2xl overflow-hidden bg-black/40">
             <button
               onClick={() => setOpenIndex(openIndex === i ? null : i)}
               className="w-full flex items-center justify-between p-6 text-left hover:bg-white/[0.04] transition-colors"

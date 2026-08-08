@@ -3,7 +3,8 @@ import {
   motion,
   useMotionValue,
   useTransform,
-  useAnimationFrame
+  useAnimationFrame,
+  useInView
 } from "framer-motion";
 
 interface ScrollVelocityProps {
@@ -57,7 +58,11 @@ const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
 
   const direction = velocity < 0 ? -1 : 1;
 
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(containerRef, { margin: "100px" });
+
   useAnimationFrame((_, delta) => {
+    if (!isInView) return; // Pause animation when out of view to prevent lag
     const moveBy = direction * Math.abs(velocity) * (delta / 1000);
     baseX.set(baseX.get() + moveBy);
   });
@@ -76,7 +81,7 @@ const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
   }
 
   return (
-    <section className="overflow-hidden">
+    <section ref={containerRef} className="overflow-hidden">
       <motion.div
         className={`flex whitespace-nowrap ${scrollerClassName}`}
         style={{ x, ...style }}
