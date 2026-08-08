@@ -114,9 +114,15 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
-        <p className="text-white/40 text-xs text-center md:text-left">
-          © {new Date().getFullYear()} Insidious Bulls. All rights reserved.
-        </p>
+        <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
+          <p className="text-white/40 text-xs">
+            © {new Date().getFullYear()} Insidious Bulls. All rights reserved.
+          </p>
+          <span className="hidden md:inline text-white/20">•</span>
+          <Link to="/privacy-policy" className="text-white/40 text-xs hover:text-emerald-400 transition-colors">
+            Privacy Policy
+          </Link>
+        </div>
         <p className="text-white/40 text-[10px] md:text-xs max-w-lg text-center md:text-right leading-relaxed">
           Disclaimer: Trading involves significant risk of loss and is not suitable for everyone. 
           Information provided is for educational purposes only.
