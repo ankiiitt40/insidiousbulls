@@ -2,7 +2,7 @@ import { useParams, Link, useNavigate } from "react";
 import { BLOG_POSTS } from "../data/blogData";
 import SEO from "../components/SEO/SEO";
 import { Clock, Calendar, User, ArrowLeft, ArrowRight, CheckCircle2, BookOpen, ExternalLink, HelpCircle, AlertCircle, RefreshCw } from "lucide-react";
-import GradientText from "../components/Text/GradientText";
+import ImageWithFallback from "../components/ui/ImageWithFallback";
 
 export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -161,23 +161,18 @@ export default function BlogPostPage() {
           )}
         </div>
 
-        <GradientText
-          colors={["#ffffff", "#69F0AE", "#ffffff"]}
-          animationSpeed={8}
-          showBorder={false}
-          className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight text-left"
-        >
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-emerald-300 to-white text-left">
           {post.title}
-        </GradientText>
+        </h1>
 
         {/* Author Bio Snippet */}
         <div className="flex items-center gap-3 pt-4 border-t border-white/10">
           <div className="w-10 h-10 rounded-full bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-400 font-bold text-sm">
-            {post.author.charAt(0)}
+            {post.author ? post.author.charAt(0) : "I"}
           </div>
           <div>
             <p className="text-sm font-semibold text-white flex items-center gap-1">
-              <User size={14} className="text-emerald-400" /> Authored by {post.author}
+              <User size={14} className="text-emerald-400" /> Authored by {post.author || "Insidious Bulls Team"}
             </p>
             <p className="text-xs text-white/50">{post.authorBio}</p>
           </div>
@@ -186,9 +181,10 @@ export default function BlogPostPage() {
 
       {/* Featured Image */}
       <div className="w-full h-64 sm:h-96 rounded-3xl overflow-hidden mb-12 border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.6)]">
-        <img
+        <ImageWithFallback
           src={post.featuredImage}
           alt={post.title}
+          category={post.category}
           className="w-full h-full object-cover"
         />
       </div>

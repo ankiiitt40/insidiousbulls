@@ -4,6 +4,7 @@ import { Search, Clock, Tag, ArrowRight, BookOpen } from "lucide-react";
 import { BLOG_POSTS, BlogPost } from "../data/blogData";
 import SEO from "../components/SEO/SEO";
 import GradientText from "../components/Text/GradientText";
+import ImageWithFallback from "../components/ui/ImageWithFallback";
 
 const CATEGORIES = ["All", "Forex", "Crypto", "Price Action", "Risk Management"] as const;
 
@@ -128,13 +129,13 @@ export default function BlogPage() {
             >
               {/* Image Container */}
               <div className="relative h-48 sm:h-52 w-full overflow-hidden">
-                <img
+                <ImageWithFallback
                   src={post.featuredImage}
                   alt={post.title}
-                  loading="lazy"
+                  category={post.category}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-4 left-4 bg-emerald-500/90 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                <div className="absolute top-4 left-4 bg-emerald-500/90 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm z-10">
                   {post.category}
                 </div>
               </div>
