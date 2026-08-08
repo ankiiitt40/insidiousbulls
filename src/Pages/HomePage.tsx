@@ -16,6 +16,8 @@ import TradingChart from '../components/home/TradingChart';
 import FAQ from '../components/home/FAQ';
 import SEO from '../components/SEO/SEO';
 
+import ibullsVideo from '../assets/ibulls.mp4';
+
 const firstRowReviews = reviews.slice(0, 10);
 const secondRowReviews = reviews.slice(10, 20);
 
@@ -258,6 +260,33 @@ function HomePage() {
     />
   </button>
 </div>
+
+{/* Premium Video Section */}
+<section className="w-full flex justify-center px-4 mt-24">
+  <div className="relative w-full max-w-[1000px] rounded-3xl overflow-hidden
+                  bg-white/[0.02] backdrop-blur-xl
+                  border border-white/10
+                  shadow-[0_0_40px_rgba(255,255,255,0.03)]
+                  group">
+                  
+    {/* Subtle Premium Glow behind the video */}
+    <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/5 via-transparent to-blue-500/5 opacity-50"></div>
+    
+    <div className="relative z-10 w-full rounded-3xl overflow-hidden">
+      <video
+        src={ibullsVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+        className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-[1.01]"
+        aria-label="Insidious Bulls trading overview video"
+      />
+    </div>
+  </div>
+</section>
+
 <div className="relative w-full max-w-6xl mt-24 mx-auto px-10 py-14
                 rounded-3xl
                 bg-transparent
