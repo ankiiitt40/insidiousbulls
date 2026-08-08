@@ -224,7 +224,9 @@ export default function BlogPostPage() {
                    [&>h2]:text-2xl [&>h2]:sm:text-3xl [&>h2]:font-bold [&>h2]:text-white [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:border-b [&>h2]:border-white/10 [&>h2]:pb-3
                    [&>h3]:text-xl [&>h3]:font-semibold [&>h3]:text-emerald-400 [&>h3]:mt-6 [&>h3]:mb-3
                    [&>p]:leading-relaxed [&>ul]:list-disc [&>ul]:pl-6 [&>ul]:space-y-2 [&>ol]:list-decimal [&>ol]:pl-6 [&>ol]:space-y-2
-                   [&>pre]:bg-black/60 [&>pre]:p-4 [&>pre]:rounded-xl [&>pre]:border [&>pre]:border-white/10 [&>pre]:overflow-x-auto [&>pre]:text-emerald-400 [&>pre]:text-xs"
+                   [&>pre]:bg-black/60 [&>pre]:p-4 [&>pre]:rounded-xl [&>pre]:border [&>pre]:border-white/10 [&>pre]:overflow-x-auto [&>pre]:text-emerald-400 [&>pre]:text-xs
+                   [&_table]:block [&_table]:max-w-full [&_table]:overflow-x-auto [&_table]:w-full [&_table]:border-collapse [&_th]:border [&_th]:border-white/20 [&_th]:p-3 [&_td]:border [&_td]:border-white/20 [&_td]:p-3
+                   [&_img]:max-w-full [&_img]:h-auto [&_img]:rounded-xl [&_img]:border [&_img]:border-white/10"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 

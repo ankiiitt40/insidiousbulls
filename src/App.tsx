@@ -12,6 +12,7 @@ import BlogPage from "./Pages/BlogPage";
 import BlogPostPage from "./Pages/BlogPostPage";
 import CustomCursor from "./components/ui/CustomCursor";
 import MobileCTA from "./components/ui/MobileCTA";
+import Footer from "./components/ui/Footer";
 import ErrorBoundary from "./components/ui/ErrorBoundary";
 
 // Global reference to Lenis for route synchronization
@@ -123,6 +124,8 @@ function App() {
             </AnimatePresence>
           </ErrorBoundary>
         </div>
+        
+        <Footer />
       </div>
     </div>
   );

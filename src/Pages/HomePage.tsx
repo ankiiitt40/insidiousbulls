@@ -11,6 +11,8 @@ import ScrollVelocity from '../components/ui/ScrollVelocity';
 import { CheckCircle, XCircle, Layers } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { BarChart3, TrendingUp, BookOpenCheck, Clock } from "lucide-react";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 import TradingChart from '../components/home/TradingChart';
 import FAQ from '../components/home/FAQ';
@@ -23,6 +25,8 @@ const secondRowReviews = reviews.slice(10, 20);
 
 function HomePage() {
   const navigate = useNavigate();
+  const videoRef = useRef<HTMLDivElement>(null);
+  const isVideoInView = useInView(videoRef, { once: true, margin: "600px" });
 
   const homeSchema = [
     {
@@ -46,7 +50,7 @@ function HomePage() {
   ];
 
   return (
-    <section className="relative w-full flex flex-col items-center text-center px-5 py-24 overflow-x-hidden">
+    <section className="relative w-full flex flex-col items-center text-center px-4 sm:px-5 py-12 sm:py-24 overflow-x-hidden">
       <SEO
         title="Insidious Bulls | Learn Forex, Crypto & Commodity Trading"
         description="Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets."
@@ -64,7 +68,7 @@ function HomePage() {
           colors={["#00C853", "#e0e8e4", "#69F0AE", "#116835"]}
           animationSpeed={8}
           showBorder={false}
-          className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold leading-tight"
+          className="text-[28px] sm:text-3xl md:text-5xl lg:text-7xl font-bold leading-tight break-words"
         >
           Trade Smarter. Grow Faster.
         </GradientText>
@@ -126,9 +130,9 @@ function HomePage() {
 
       <div className="text-center px-4">
 
-  <div className="flex justify-center items-baseline gap-2 
-                  text-sm sm:text-lg md:text-2xl lg:text-3xl 
-                  font-semibold whitespace-nowrap">
+  <div className="flex flex-wrap justify-center items-baseline gap-2 
+                  text-base sm:text-lg md:text-2xl lg:text-3xl 
+                  font-semibold">
 
     {/* 1000+ CountUp */}
     <span className="bg-gradient-to-r 
@@ -263,32 +267,36 @@ function HomePage() {
 </div>
 
 {/* Premium Video Section */}
-<section className="w-full flex justify-center px-4 mt-24">
+<section ref={videoRef} className="w-full flex justify-center px-4 mt-16 md:mt-24">
   <div className="relative w-full max-w-[1000px] rounded-3xl overflow-hidden
                   bg-white/[0.02] backdrop-blur-xl
                   border border-white/10
                   shadow-[0_0_40px_rgba(255,255,255,0.03)]
-                  group">
+                  group aspect-video flex items-center justify-center">
                   
     {/* Subtle Premium Glow behind the video */}
     <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/5 via-transparent to-blue-500/5 opacity-50"></div>
     
-    <div className="relative z-10 w-full rounded-3xl overflow-hidden">
-      <video
-        src={ibullsVideo}
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="metadata"
-        className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-[1.01]"
-        aria-label="Insidious Bulls trading overview video"
-      />
+    <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden bg-[#050505]">
+      {isVideoInView ? (
+        <video
+          src={ibullsVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover transform transition-transform duration-700 hover:scale-[1.01]"
+          aria-label="Insidious Bulls trading overview video"
+        />
+      ) : (
+        <div className="w-full h-full bg-gradient-to-tr from-[#050505] via-[#0a0a0a] to-[#050505] animate-pulse" />
+      )}
     </div>
   </div>
 </section>
 
-<div className="relative w-full max-w-6xl mt-24 mx-auto px-10 py-14
+<div className="relative w-full max-w-6xl mt-16 md:mt-24 mx-auto px-6 sm:px-10 py-10 sm:py-14
                 rounded-3xl
                 bg-transparent
                 border border-white/10

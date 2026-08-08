@@ -386,6 +386,18 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     };
   }, [closeOnClickAway, open, closeMenu]);
 
+  // Handle body scroll lock
+  React.useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [open]);
+
   return (
   <div
   className={`sm-scope z-50 ${
@@ -484,8 +496,10 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         <aside
           id="staggered-menu-panel"
           ref={panelRef}
-          className="staggered-menu-panel absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px] pointer-events-auto"
+          className="staggered-menu-panel absolute top-0 right-0 h-full w-[45vw] min-w-[320px] max-w-[600px] bg-white translate-x-[100%] flex flex-col pointer-events-auto z-10 pt-[5rem] pb-[env(safe-area-inset-bottom)] overflow-y-auto"
           style={{ WebkitBackdropFilter: 'blur(12px)' }}
+          role="dialog"
+          aria-modal="true"
           aria-hidden={!open}
           data-menu-open={open}
         >
