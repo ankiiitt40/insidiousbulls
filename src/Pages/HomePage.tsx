@@ -33,7 +33,8 @@ function HomePage() {
       "logo": "https://insidiousbulls.com/logo.png",
       "description": "Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets.",
       "sameAs": [
-        "https://www.instagram.com/tradewith_shubham7"
+        "https://www.instagram.com/tradewith_shubham7",
+        "https://www.linkedin.com/in/shubhamv7/"
       ]
     },
     {

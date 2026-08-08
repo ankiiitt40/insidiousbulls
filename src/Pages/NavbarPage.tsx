@@ -11,6 +11,10 @@ const socialItems = [
   {
     label: "Instagram",
     link: "https://www.instagram.com/tradewith_shubham7?igsh=dDM0MDRsc2FjMWV0"
+  },
+  {
+    label: "LinkedIn",
+    link: "https://www.linkedin.com/in/shubhamv7/"
   }
 ];
 
