@@ -8,6 +8,8 @@ import Navbar from "./Pages/NavbarPage";
 import Home from "./Pages/HomePage";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import BlogPage from "./Pages/BlogPage";
+import BlogPostPage from "./Pages/BlogPostPage";
 import CustomCursor from "./components/ui/CustomCursor";
 import MobileCTA from "./components/ui/MobileCTA";
 
@@ -80,6 +82,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/blog" element={<BlogPage />} />
+                <Route path="/blog/:slug" element={<BlogPostPage />} />
               </Routes>
             </motion.div>
           </AnimatePresence>

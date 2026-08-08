@@ -1,9 +1,47 @@
 import GradientText from "../components/Text/GradientText";
 import { Mail, Phone, MessageCircle } from "lucide-react";
+import SEO from "../components/SEO/SEO";
 
 function Contact() {
+  const contactSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Us | Trading Course & Mentorship Enquiries",
+      "description": "Contact us for trading course enquiries, mentorship details, partnerships, or support. Start your journey in forex, crypto, and commodity trading today.",
+      "url": "https://insidiousbulls.com/contact"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://insidiousbulls.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://insidiousbulls.com/contact"
+        }
+      ]
+    }
+  ];
+
   return (
     <section className="w-full min-h-screen px-6 md:px-12 py-28 text-white flex justify-center">
+      <SEO
+        title="Contact Us | Trading Course & Mentorship Enquiries"
+        description="Contact us for trading course enquiries, mentorship details, partnerships, or support. Start your journey in forex, crypto, and commodity trading today."
+        canonical="https://insidiousbulls.com/contact"
+        ogTitle="Contact Us | Trading Course & Mentorship Enquiries"
+        ogDescription="Contact us for trading course enquiries, mentorship details, partnerships, or support. Start your journey in forex, crypto, and commodity trading today."
+        ogUrl="https://insidiousbulls.com/contact"
+        schema={contactSchema}
+      />
 
       <div className="max-w-4xl w-full">
 

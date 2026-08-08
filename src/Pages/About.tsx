@@ -3,13 +3,40 @@ import TrueFocus from "../components/Text/TrueFocus";
 import { CheckCircle, Clock, BarChart3, BookOpenCheck, PlayCircle } from "lucide-react";
 import { useState } from "react";
 import { CheckCircle2, X, MessageCircle } from "lucide-react";
-
-
+import SEO from "../components/SEO/SEO";
 
 function AboutSection() {
 
    const [showForm, setShowForm] = useState(false);
    const [successPopup, setSuccessPopup] = useState(false);
+
+   const aboutSchema = [
+     {
+       "@context": "https://schema.org",
+       "@type": "AboutPage",
+       "name": "About Insidious Bulls | Forex Trading Education & Mentorship",
+       "description": "Know about Insidious Bulls, a trading academy helping traders learn forex, crypto, & commodity trading through practical education & real market insights.",
+       "url": "https://insidiousbulls.com/about"
+     },
+     {
+       "@context": "https://schema.org",
+       "@type": "BreadcrumbList",
+       "itemListElement": [
+         {
+           "@type": "ListItem",
+           "position": 1,
+           "name": "Home",
+           "item": "https://insidiousbulls.com/"
+         },
+         {
+           "@type": "ListItem",
+           "position": 2,
+           "name": "About",
+           "item": "https://insidiousbulls.com/about"
+         }
+       ]
+     }
+   ];
 
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
@@ -34,6 +61,15 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   return (
 
   <>
+    <SEO
+      title="About Insidious Bulls | Forex Trading Education & Mentorship"
+      description="Know about Insidious Bulls, a trading academy helping traders learn forex, crypto, & commodity trading through practical education & real market insights."
+      canonical="https://insidiousbulls.com/about"
+      ogTitle="About Insidious Bulls | Forex Trading Education & Mentorship"
+      ogDescription="Know about Insidious Bulls, a trading academy helping traders learn forex, crypto, & commodity trading through practical education & real market insights."
+      ogUrl="https://insidiousbulls.com/about"
+      schema={aboutSchema}
+    />
     {/* Success Popup */}
    {successPopup && (
   <div className="fixed inset-0 z-50 flex items-center justify-center px-4">

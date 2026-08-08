@@ -1,0 +1,29 @@
+# Insidious Bulls Robots.txt
+# Allow search engines and AI answer engines to index educational content
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*?*
+
+# Explicit permissions for major Search & AI Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://insidiousbulls.com/sitemap.xml

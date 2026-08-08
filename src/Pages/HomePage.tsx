@@ -14,14 +14,45 @@ import { BarChart3, TrendingUp, BookOpenCheck, Clock } from "lucide-react";
 
 import TradingChart from '../components/home/TradingChart';
 import FAQ from '../components/home/FAQ';
+import SEO from '../components/SEO/SEO';
 
 const firstRowReviews = reviews.slice(0, 10);
 const secondRowReviews = reviews.slice(10, 20);
 
 function HomePage() {
   const navigate = useNavigate();
+
+  const homeSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Insidious Bulls",
+      "url": "https://insidiousbulls.com/",
+      "logo": "https://insidiousbulls.com/logo.png",
+      "description": "Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets.",
+      "sameAs": [
+        "https://www.instagram.com/tradewith_shubham7"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Insidious Bulls",
+      "url": "https://insidiousbulls.com/"
+    }
+  ];
+
   return (
-<section className="relative w-full flex flex-col items-center text-center px-5 py-24 overflow-x-hidden">
+    <section className="relative w-full flex flex-col items-center text-center px-5 py-24 overflow-x-hidden">
+      <SEO
+        title="Insidious Bulls | Learn Forex, Crypto & Commodity Trading"
+        description="Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets."
+        canonical="https://insidiousbulls.com/"
+        ogTitle="Insidious Bulls | Learn Forex, Crypto & Commodity Trading"
+        ogDescription="Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets."
+        ogUrl="https://insidiousbulls.com/"
+        schema={homeSchema}
+      />
 
        <div className="flex flex-col items-center gap-10">
 

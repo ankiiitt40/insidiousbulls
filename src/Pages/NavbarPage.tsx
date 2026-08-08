@@ -4,7 +4,7 @@ import StaggeredMenu from '../components/Navbar/StaggeredMenu'
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
   { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
- 
+  { label: 'Blog', ariaLabel: 'Read trading blog', link: '/blog' },
   { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' },
 ]
 const socialItems = [
