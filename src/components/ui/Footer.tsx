@@ -119,9 +119,17 @@ export default function Footer() {
             © {new Date().getFullYear()} Insidious Bulls. All rights reserved.
           </p>
           <span className="hidden md:inline text-white/20">•</span>
-          <Link to="/privacy-policy" className="text-white/40 text-xs hover:text-emerald-400 transition-colors">
-            Privacy Policy
-          </Link>
+          <div className="flex flex-wrap items-center justify-center gap-2 text-white/40 text-xs">
+            <Link to="/privacy-policy" className="hover:text-emerald-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-white/20">|</span>
+            <span className="cursor-not-allowed">Terms & Conditions</span>
+            <span className="text-white/20">|</span>
+            <span className="cursor-not-allowed">Risk Disclaimer</span>
+            <span className="text-white/20">|</span>
+            <span className="cursor-not-allowed">Refund Policy</span>
+          </div>
         </div>
         <p className="text-white/40 text-[10px] md:text-xs max-w-lg text-center md:text-right leading-relaxed">
           Disclaimer: Trading involves significant risk of loss and is not suitable for everyone. 

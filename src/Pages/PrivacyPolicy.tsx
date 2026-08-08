@@ -74,230 +74,251 @@ const PrivacyPolicy: React.FC = () => {
                         [&_a]:text-emerald-400 [&_a]:hover:text-emerald-300 [&_a]:transition-colors">
           
           <p>
-            Insidious Bulls ("Insidious Bulls", "we", "us", or "our") respects your privacy and is committed to handling personal information responsibly.
+            At Insidious Bulls, we respect your privacy and are committed to handling your personal information responsibly. This Privacy Policy explains how information may be collected, used, and protected when you visit <strong>insidiousbulls.com</strong> or contact us through the services and communication channels available on our website.
           </p>
           <p>
-            This Privacy Policy explains how information may be collected, used, stored, and protected when you visit <strong>insidiousbulls.com</strong>, interact with our website, contact us, or use services and educational resources made available through the website.
-          </p>
-          <p>
-            By using our website, you acknowledge that you have read and understood this Privacy Policy.
+            By using our website, you acknowledge this Privacy Policy.
           </p>
 
-          <h2>1. Scope of This Privacy Policy</h2>
+          <h2>1. About Insidious Bulls</h2>
           <p>
-            This Privacy Policy applies to information collected through the Insidious Bulls website and related interactions that are controlled by Insidious Bulls.
+            Insidious Bulls is a trading education platform focused on educational content relating to forex, crypto, commodities, market analysis, price action, and trading-related concepts.
           </p>
           <p>
-            It does not apply to third-party websites, platforms, payment providers, social-media services, or other external services that may be linked from our website. Those services operate under their own privacy policies and terms.
-          </p>
-
-          <h2>2. Information We May Collect</h2>
-          <p>
-            Depending on how you interact with the website, we may collect information that you voluntarily provide to us. This may include:
-          </p>
-          <ul>
-            <li>Your name</li>
-            <li>Email address</li>
-            <li>Phone or WhatsApp number</li>
-            <li>Information included in enquiries or messages</li>
-            <li>Information you provide when requesting information about courses, mentorship, or educational services</li>
-            <li>Other information you voluntarily submit through forms or communications</li>
-          </ul>
-          <p>
-            We only seek to collect information that is reasonably relevant to the purpose for which it is provided.
-          </p>
-
-          <h2>3. Information Collected Automatically</h2>
-          <p>
-            When you access a website, certain technical information may be processed automatically by the website, hosting infrastructure, browsers, or third-party services used by the website.
-          </p>
-          <p>
-            Depending on the technical configuration of the website, this may include:
-          </p>
-          <ul>
-            <li>IP address</li>
-            <li>Browser type and version</li>
-            <li>Device type</li>
-            <li>Operating system</li>
-            <li>Approximate usage information</li>
-            <li>Pages visited</li>
-            <li>Referring pages</li>
-            <li>Date and time of access</li>
-            <li>Technical information required to maintain website functionality and security</li>
-          </ul>
-          <p>
-            The exact information collected may vary depending on the services and technologies active on the website at a particular time.
-          </p>
-
-          <h2>4. How We Use Information</h2>
-          <p>
-            Information may be used for legitimate purposes including:
-          </p>
-          <ul>
-            <li>Responding to enquiries</li>
-            <li>Providing information about our educational offerings</li>
-            <li>Communicating with users who contact us</li>
-            <li>Providing requested services or resources</li>
-            <li>Improving website functionality and user experience</li>
-            <li>Understanding website usage and performance</li>
-            <li>Maintaining website security</li>
-            <li>Preventing misuse, fraud, or unauthorized activity</li>
-            <li>Complying with applicable legal obligations</li>
-            <li>Communicating important service-related information</li>
-          </ul>
-          <p>
-            We do not intend to use personal information for purposes that are incompatible with the purpose for which it was collected, except where permitted or required by applicable law.
-          </p>
-
-          <h2>5. Contact and Communication</h2>
-          <p>
-            If you contact Insidious Bulls through email, telephone, WhatsApp, contact forms, or other available communication channels, we may use the information you provide to respond to your enquiry.
-          </p>
-          <p>
-            Our currently published contact details include:
+            For privacy-related questions or requests, you can contact us at:
           </p>
           <ul>
             <li><strong>Email:</strong> <a href="mailto:Shubhsv777@gmail.com">Shubhsv777@gmail.com</a></li>
             <li><strong>Phone / WhatsApp:</strong> +91 9131749509</li>
           </ul>
-          <p>
-            Please avoid sending sensitive personal, financial, authentication, or security information through ordinary email or messaging channels unless specifically requested through an appropriate secure process.
-          </p>
 
-          <h2>6. Courses, Mentorship and Educational Services</h2>
+          <h2>2. Information You Provide</h2>
           <p>
-            If you enquire about or use an Insidious Bulls course, mentorship program, or other educational service, additional information may be requested where reasonably necessary to provide or administer that service.
-          </p>
-          <p>
-            The specific information collected will depend on the service and the method through which it is provided. Where a third-party platform is used to provide a particular service, that platform may separately process information according to its own privacy policy.
-          </p>
-
-          <h2>7. Payment Information</h2>
-          <p>
-            If payments for Insidious Bulls services are processed through a third-party payment provider, payment information may be processed directly by that provider.
-          </p>
-          <p>
-            Insidious Bulls does not claim to store complete card numbers, CVV numbers, banking credentials, or other sensitive payment credentials unless the relevant payment architecture specifically requires and supports such processing.
-          </p>
-          <p>
-            Users should review the privacy and security policies of the applicable payment provider before completing a transaction.
-          </p>
-
-          <h2>8. Cookies and Similar Technologies</h2>
-          <p>
-            Websites may use cookies, browser storage, or similar technologies for purposes such as:
+            We may receive personal information that you voluntarily provide when you interact with our website or contact us. This may include:
           </p>
           <ul>
-            <li>Maintaining website functionality</li>
-            <li>Remembering preferences</li>
-            <li>Understanding website usage</li>
-            <li>Improving performance</li>
-            <li>Supporting security</li>
+            <li>Name</li>
+            <li>Email address</li>
+            <li>Phone number</li>
+            <li>WhatsApp number</li>
+            <li>Information included in course or mentorship enquiries</li>
+            <li>Messages or other information you voluntarily submit to us</li>
           </ul>
           <p>
-            The specific technologies used by Insidious Bulls may change as the website and its services evolve. Where required, applicable consent or preference mechanisms may be provided for non-essential technologies.
+            We only use information that is reasonably necessary for the purpose for which you provide it.
           </p>
 
-          <h2>9. Analytics and Performance</h2>
+          <h2>3. Course Enquiry Form</h2>
           <p>
-            Insidious Bulls may use analytics or performance technologies to understand how visitors interact with the website and to improve the website.
+            Our website includes an enquiry form that allows visitors to contact Insidious Bulls regarding our educational offerings.
           </p>
           <p>
-            Where third-party analytics services are used, those providers may process technical or usage information in accordance with their own privacy policies. Only analytics services actually implemented on the website should be considered covered by this section.
-          </p>
-
-          <h2>10. Third-Party Services</h2>
-          <p>
-            Our website may contain links, integrations, embeds, or functionality provided by third parties. These may include social-media platforms, communication services, analytics providers, payment providers, hosting providers, or other external services.
+            Information submitted through this form may be transmitted to a Google Apps Script endpoint configured for the website. This means information submitted through the form may be processed using Google infrastructure and may also be subject to Google's applicable privacy practices and policies.
           </p>
           <p>
-            Third-party services may collect or process information independently of Insidious Bulls. We encourage users to review the privacy policies and terms of any third-party service before using it.
+            We do not claim ownership or control over Google's infrastructure or third-party services.
+          </p>
+          <p>
+            Please avoid submitting passwords, financial credentials, private keys, or other highly sensitive information through the enquiry form.
           </p>
 
-          <h2>11. Sharing of Information</h2>
+          <h2>4. Email, Phone and WhatsApp Communications</h2>
+          <p>
+            If you contact us through email, telephone, WhatsApp, or another available communication channel, we may use the information you provide to:
+          </p>
+          <ul>
+            <li>Respond to your enquiry</li>
+            <li>Provide information about our courses or mentorship</li>
+            <li>Answer questions about our educational services</li>
+            <li>Provide requested information</li>
+            <li>Communicate with you regarding your enquiry</li>
+          </ul>
+          <p>Our currently published contact details are:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:Shubhsv777@gmail.com">Shubhsv777@gmail.com</a></li>
+            <li><strong>Phone / WhatsApp:</strong> +91 9131749509</li>
+          </ul>
+
+          <h2>5. Information Collected Automatically</h2>
+          <p>
+            When you visit a website, certain technical information may potentially be recorded by the website's hosting or infrastructure providers. This may include information such as:
+          </p>
+          <ul>
+            <li>IP address</li>
+            <li>Browser type</li>
+            <li>Device type</li>
+            <li>Operating system</li>
+            <li>Requested pages</li>
+            <li>Date and time of access</li>
+            <li>Referring website</li>
+            <li>Technical information required to operate and secure the website</li>
+          </ul>
+          <p>
+            This information may be processed as part of normal hosting, security, and website infrastructure operations.
+          </p>
+          <p>
+            The Insidious Bulls frontend does not intentionally implement third-party advertising or tracking analytics scripts such as Google Analytics, Meta Pixel, or Microsoft Clarity based on the current website implementation.
+          </p>
+
+          <h2>6. Cookies and Tracking Technologies</h2>
+          <p>
+            The current Insidious Bulls frontend does not intentionally set or use non-essential tracking or advertising cookies.
+          </p>
+          <p>
+            The website also does not currently use frontend localStorage or sessionStorage for user tracking based on the current implementation.
+          </p>
+          <p>
+            However, certain technically necessary technologies may potentially be used by hosting infrastructure, browsers, embedded third-party services, or external platforms linked from the website. The use of such third-party technologies is governed by the applicable provider's policies.
+          </p>
+
+          <h2>7. How We Use Information</h2>
+          <p>
+            Information provided to us may be used to:
+          </p>
+          <ul>
+            <li>Respond to enquiries</li>
+            <li>Provide information about courses and mentorship</li>
+            <li>Communicate with users</li>
+            <li>Improve our educational services</li>
+            <li>Improve website functionality and user experience</li>
+            <li>Maintain website security</li>
+            <li>Prevent misuse or unauthorized activity</li>
+            <li>Maintain appropriate business records</li>
+            <li>Comply with applicable legal obligations</li>
+          </ul>
+          <p>
+            We do not intend to use personal information for purposes unrelated to the reason it was collected unless permitted or required by applicable law.
+          </p>
+
+          <h2>8. Third-Party Services</h2>
+          <p>
+            Insidious Bulls may use or link to third-party services to support website functionality or communication.
+          </p>
+          <p>
+            The current website may interact with or link to services including:
+          </p>
+          <ul>
+            <li><strong>Google Apps Script</strong> — used for processing information submitted through the website enquiry form.</li>
+            <li><strong>WhatsApp</strong> — available as a communication channel.</li>
+            <li><strong>Instagram</strong> — linked social-media platform.</li>
+            <li><strong>LinkedIn</strong> — linked social-media platform.</li>
+          </ul>
+          <p>
+            When you interact with a third-party service, that service may independently collect or process information according to its own privacy policy and terms. We do not control the privacy practices of external platforms.
+          </p>
+
+          <h2>9. Payment Information</h2>
+          <p>
+            The current Insidious Bulls website does not have a payment processor integrated directly into its frontend codebase.
+          </p>
+          <p>
+            Accordingly, this website does not currently claim to collect or store payment-card information such as:
+          </p>
+          <ul>
+            <li>Credit/debit card numbers</li>
+            <li>CVV numbers</li>
+            <li>Banking passwords</li>
+            <li>UPI credentials</li>
+          </ul>
+          <p>
+            If payment functionality is introduced in the future, this Privacy Policy may be updated to explain the applicable payment-processing arrangements.
+          </p>
+
+          <h2>10. Sharing of Information</h2>
           <p>
             We do not intend to sell your personal information. Information may be shared where reasonably necessary with:
           </p>
           <ul>
-            <li>Service providers that help operate the website or deliver requested services</li>
-            <li>Payment or transaction providers, where applicable</li>
-            <li>Communication or technology providers</li>
-            <li>Professional advisers where reasonably necessary</li>
-            <li>Government authorities or law-enforcement bodies where required by applicable law</li>
-            <li>Other parties where disclosure is legally required or reasonably necessary to protect rights, safety, security, or prevent fraud</li>
+            <li>Service providers supporting website functionality</li>
+            <li>Third-party services used to process submitted information</li>
+            <li>Communication platforms when you choose to contact us through them</li>
+            <li>Government authorities where disclosure is required by applicable law</li>
+            <li>Professional advisers or other parties where reasonably necessary to protect legal rights, security, or prevent fraud</li>
           </ul>
           <p>
             We aim to limit information sharing to what is reasonably necessary for the relevant purpose.
           </p>
 
-          <h2>12. Data Retention</h2>
+          <h2>11. Data Retention</h2>
           <p>
-            Personal information may be retained for as long as reasonably necessary to:
+            We may retain information for as long as reasonably necessary to:
           </p>
           <ul>
-            <li>Provide requested services</li>
             <li>Respond to enquiries</li>
-            <li>Maintain business and transaction records</li>
-            <li>Meet applicable legal or regulatory obligations</li>
+            <li>Provide requested services</li>
+            <li>Maintain relevant business records</li>
             <li>Resolve disputes</li>
-            <li>Protect legitimate business and security interests</li>
+            <li>Protect our legitimate interests</li>
+            <li>Meet applicable legal obligations</li>
           </ul>
           <p>
-            Retention periods may differ depending on the type and purpose of the information. Where information is no longer reasonably required and there is no legal or legitimate reason to retain it, appropriate deletion or disposal measures may be considered.
+            The appropriate retention period may vary depending on the type and purpose of the information. When information is no longer reasonably required and there is no legal or legitimate reason to retain it, it may be deleted or otherwise disposed of appropriately.
           </p>
 
-          <h2>13. Data Security</h2>
+          <h2>12. Data Security</h2>
           <p>
-            We take reasonable measures to protect information against unauthorized access, misuse, alteration, disclosure, or loss. However, no internet transmission, electronic storage system, or online service can be guaranteed to be completely secure.
+            We take reasonable measures to protect information against unauthorized access, misuse, alteration, disclosure, or loss. However, no method of transmitting or storing information electronically can be guaranteed to be completely secure.
           </p>
           <p>
-            Users should also take reasonable precautions, including using secure devices, protecting account credentials, and avoiding suspicious links or communications.
-          </p>
-
-          <h2>14. Your Choices and Privacy Rights</h2>
-          <p>
-            Depending on applicable law and the circumstances of processing, you may have rights or choices relating to your personal information. These may include:
+            You should also take reasonable precautions when communicating online. For example, do not send:
           </p>
           <ul>
-            <li>Requesting information about personal data held about you</li>
+            <li>Passwords</li>
+            <li>Private keys</li>
+            <li>Seed phrases</li>
+            <li>Banking credentials</li>
+            <li>Authentication codes</li>
+            <li>Other highly sensitive security information</li>
+          </ul>
+          <p>
+            through ordinary email, WhatsApp, or website enquiry forms.
+          </p>
+
+          <h2>13. Your Privacy Requests</h2>
+          <p>
+            Depending on applicable law and the circumstances in which your information is processed, you may contact us to request information regarding personal data associated with your interaction with Insidious Bulls.
+          </p>
+          <p>
+            Where applicable, requests may include:
+          </p>
+          <ul>
+            <li>Requesting access to personal information</li>
             <li>Requesting correction of inaccurate information</li>
             <li>Requesting deletion where applicable</li>
             <li>Withdrawing consent where processing is based on consent</li>
             <li>Requesting that certain communications be stopped</li>
-            <li>Raising a privacy-related concern or complaint</li>
+            <li>Raising a privacy-related concern</li>
           </ul>
           <p>
-            To make a privacy-related request, contact us at: <strong><a href="mailto:Shubhsv777@gmail.com">Shubhsv777@gmail.com</a></strong>
+            To submit a privacy-related request, contact: <a href="mailto:Shubhsv777@gmail.com">Shubhsv777@gmail.com</a>
           </p>
           <p>
-            We may need to verify the identity of the requester before processing certain requests. Applicable rights may vary depending on the nature of the information, the purpose of processing, and applicable law.
+            We may need to verify the identity of the requester before responding to certain requests. Applicable rights may vary depending on the nature and purpose of the processing and the law applicable to the request.
           </p>
 
-          <h2>15. Marketing Communications</h2>
+          <h2>14. Children's Privacy</h2>
           <p>
-            If you voluntarily provide your contact information for receiving information about Insidious Bulls, courses, mentorship, educational resources, or related updates, we may use that information for the relevant communications.
+            Our website provides educational information and trading-related educational resources. We do not knowingly seek to collect personal information from children in circumstances where such collection is prohibited by applicable law.
           </p>
           <p>
-            Where applicable, you may request that promotional communications be stopped. Service-related or legally required communications may continue where necessary.
-          </p>
-
-          <h2>16. Children's Privacy</h2>
-          <p>
-            Our website is intended to provide educational information and services to its intended audience. We do not knowingly seek to collect personal information from children in circumstances where such collection is prohibited by applicable law.
-          </p>
-          <p>
-            If you believe that a child has provided personal information to us inappropriately, please contact us at <strong><a href="mailto:Shubhsv777@gmail.com">Shubhsv777@gmail.com</a></strong> so that the matter can be reviewed.
+            If you believe that a child has provided personal information to Insidious Bulls inappropriately, please contact us at: <a href="mailto:Shubhsv777@gmail.com">Shubhsv777@gmail.com</a>. We will review the concern and take appropriate action where required.
           </p>
 
-          <h2>17. External Links</h2>
+          <h2>15. External Websites and Social Media</h2>
           <p>
-            Our website may contain links to third-party websites, social-media platforms, educational resources, or other external services. We are not responsible for the privacy practices, security, content, or policies of third-party websites.
+            Our website may contain links to third-party websites and platforms, including social-media services. Examples include:
           </p>
+          <ul>
+            <li>WhatsApp</li>
+            <li>Instagram</li>
+            <li>LinkedIn</li>
+            <li>Google services</li>
+          </ul>
           <p>
-            We recommend reviewing the applicable privacy policy of any external service before providing personal information.
+            When you leave the Insidious Bulls website and interact with an external service, that service's own privacy policy and terms will apply. Insidious Bulls is not responsible for the privacy practices, security, or content of third-party websites.
           </p>
 
-          <h2>18. Changes to This Privacy Policy</h2>
+          <h2>16. Changes to This Privacy Policy</h2>
           <p>
             We may update this Privacy Policy from time to time to reflect changes to:
           </p>
@@ -306,16 +327,18 @@ const PrivacyPolicy: React.FC = () => {
             <li>Our services</li>
             <li>Data-processing practices</li>
             <li>Technology</li>
+            <li>Third-party services</li>
             <li>Applicable legal or regulatory requirements</li>
           </ul>
           <p>
-            When we make material changes, we may update the "Last Updated" date displayed at the top of this page. You should periodically review this page for the latest version.
+            When changes are made, the "Last Updated" date at the top of this page will be updated. We recommend reviewing this page periodically for the latest version.
           </p>
 
-          <h2>19. Contact Us</h2>
+          <h2>17. Contact Us</h2>
           <p>
-            If you have questions, concerns, requests, or complaints relating to this Privacy Policy or the handling of personal information, please contact:
+            If you have questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, please contact us.
           </p>
+          
           <div className="mt-8 mb-8 p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col gap-4">
             <h3 className="text-white font-semibold text-lg mb-2">Insidious Bulls</h3>
             <a href="mailto:Shubhsv777@gmail.com" className="flex items-center gap-3 text-white/80 hover:text-emerald-400 transition-colors w-fit">
@@ -333,12 +356,15 @@ const PrivacyPolicy: React.FC = () => {
             <p className="text-sm text-white/50 m-0">Website: <Link to="/">insidiousbulls.com</Link></p>
           </div>
 
-          <h2>20. Important Notice</h2>
+          <h2>18. Important Notice</h2>
           <p>
-            This Privacy Policy is intended to explain our general approach to privacy and personal information. It should be reviewed against the actual technical implementation, business structure, services, third-party providers, and applicable laws before being treated as a final legal document.
+            This Privacy Policy describes the current privacy practices of the Insidious Bulls website based on its current technical implementation.
           </p>
           <p>
-            For specific legal or regulatory requirements, Insidious Bulls should obtain appropriate professional legal advice.
+            As the website, services, forms, analytics, payment systems, or other technologies evolve, this Privacy Policy may also be updated.
+          </p>
+          <p>
+            This document is intended as a general privacy-policy draft and should be reviewed against the business's actual operations and applicable legal requirements.
           </p>
 
         </div>
