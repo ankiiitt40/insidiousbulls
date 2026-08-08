@@ -13,15 +13,30 @@ import BlogPostPage from "./Pages/BlogPostPage";
 import CustomCursor from "./components/ui/CustomCursor";
 import MobileCTA from "./components/ui/MobileCTA";
 
+// Global reference to Lenis for route synchronization
+let lenisInstance: Lenis | null = null;
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "instant"
-    });
+    // 1. Instant window scroll to top
+    window.scrollTo(0, 0);
+
+    // 2. Lenis immediate scroll & resize
+    if (lenisInstance) {
+      lenisInstance.scrollTo(0, { immediate: true });
+      lenisInstance.resize();
+    }
+
+    // 3. Re-calculate height after Framer Motion route transition completes (450ms)
+    const timer = setTimeout(() => {
+      if (lenisInstance) {
+        lenisInstance.resize();
+      }
+    }, 450);
+
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   return null;
@@ -31,29 +46,28 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    let lenis: Lenis | null = null;
     let animationFrameId: number;
 
     const initLenis = () => {
       const isTouch = window.innerWidth < 1024;
       if (isTouch) {
-        if (lenis) {
-          lenis.destroy();
-          lenis = null;
+        if (lenisInstance) {
+          lenisInstance.destroy();
+          lenisInstance = null;
           cancelAnimationFrame(animationFrameId);
         }
         return;
       }
 
-      if (!lenis) {
-        lenis = new Lenis({
+      if (!lenisInstance) {
+        lenisInstance = new Lenis({
           duration: 1.2,
           smoothWheel: true,
           wheelMultiplier: 1,
         });
 
         const raf = (time: number) => {
-          lenis?.raf(time);
+          lenisInstance?.raf(time);
           animationFrameId = requestAnimationFrame(raf);
         };
         animationFrameId = requestAnimationFrame(raf);
@@ -65,7 +79,10 @@ function App() {
 
     return () => {
       window.removeEventListener('resize', initLenis);
-      if (lenis) lenis.destroy();
+      if (lenisInstance) {
+        lenisInstance.destroy();
+        lenisInstance = null;
+      }
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
