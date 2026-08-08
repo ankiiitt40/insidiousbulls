@@ -70,7 +70,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <li>Is the breakout being accepted or rejected?</li>
         <li>Where would the original trade idea become invalid?</li>
       </ul>
-      <blockquote className="border-l-4 border-emerald-400 pl-4 italic my-6 text-emerald-300 font-medium">
+      <blockquote class="border-l-4 border-emerald-400 pl-4 italic my-6 text-emerald-300 font-medium">
         The central idea is simple: Understand the market first. Find a trade second.
       </blockquote>
       <p>Price action is not a single strategy. It is better understood as a framework for interpreting market behavior.</p>
@@ -80,7 +80,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Financial markets constantly reflect changing expectations, positioning, liquidity, sentiment, and information. Price is the final observable result of that interaction.</p>
       <p>This is why traders study the sequence of price movements rather than treating every candle as an isolated signal. For example, a bullish candlestick near an important support zone may tell a different story from the same bullish candle appearing in the middle of an established downtrend.</p>
       <p>The candle itself has not changed. Its context has. This is one of the most important principles for beginners to understand. A candlestick pattern should therefore rarely be interpreted in isolation.</p>
-      <pre className="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Price Pattern + Market Structure + Location + Context + Risk = Potential Trading Setup</pre>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Price Pattern + Market Structure + Location + Context + Risk = Potential Trading Setup</pre>
 
       <h2>How Does Price Action Trading Work?</h2>
       <p>A basic price action analysis can be divided into five stages:</p>
@@ -92,7 +92,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h3>Step 3 — Wait for Price to Reach the Area</h3>
       <p>Instead of chasing every movement, allow price to come to your predefined area. This creates a structured process:</p>
-      <pre className="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">Trend Identified → Support Zone Identified → Price Approaches Support → Price Reaction Observed → Trade Evaluated</pre>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">Trend Identified → Support Zone Identified → Price Approaches Support → Price Reaction Observed → Trade Evaluated</pre>
 
       <h3>Step 4 — Look for Confirmation</h3>
       <p>Confirmation might include rejection of a level, strong displacement, break of a local structure, retest, or engulfing candle behavior. No single confirmation guarantees a successful trade.</p>
@@ -103,9 +103,9 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Understanding Market Structure</h2>
       <p>Market structure is one of the foundations of price action analysis.</p>
       <p>A simple way to understand an upward trend is:</p>
-      <pre className="bg-black/60 p-3 rounded-xl text-emerald-400 font-mono text-xs my-3 border border-white/10">Higher High → Higher Low → Higher High → Higher Low</pre>
+      <pre class="bg-black/60 p-3 rounded-xl text-emerald-400 font-mono text-xs my-3 border border-white/10">Higher High → Higher Low → Higher High → Higher Low</pre>
       <p>A downward trend can be represented as:</p>
-      <pre className="bg-black/60 p-3 rounded-xl text-emerald-400 font-mono text-xs my-3 border border-white/10">Lower Low → Lower High → Lower Low → Lower High</pre>
+      <pre class="bg-black/60 p-3 rounded-xl text-emerald-400 font-mono text-xs my-3 border border-white/10">Lower Low → Lower High → Lower Low → Lower High</pre>
       
       <h3>What Is a Higher High?</h3>
       <p>A higher high occurs when price forms a swing high above a previous significant swing high.</p>
@@ -146,9 +146,9 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Risk Management and Position Sizing</h2>
       <p>One of the biggest mistakes beginners make is focusing entirely on finding entries. A professional trading process always asks: <em>How much can I lose if I am wrong?</em></p>
 
-      <div className="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4">
-        <p className="text-emerald-400 font-mono text-sm font-bold">Risk Amount = Account Balance × Risk Percentage</p>
-        <p className="text-xs text-white/70 mt-1">Example: ₹100,000 balance × 1% risk = ₹1,000 planned risk per trade.</p>
+      <div class="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4">
+        <p class="text-emerald-400 font-mono text-sm font-bold">Risk Amount = Account Balance × Risk Percentage</p>
+        <p class="text-xs text-white/70 mt-1">Example: ₹100,000 balance × 1% risk = ₹1,000 planned risk per trade.</p>
       </div>
 
       <h2>The 1:2 Risk-to-Reward Framework</h2>
@@ -162,33 +162,33 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Real trading outcomes depend on actual win rate, average win/loss, transaction costs, slippage, execution quality, and market conditions.</p>
 
       <h2>What Is Trading Expectancy?</h2>
-      <pre className="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Expectancy = (Win Rate × Average Win) - (Loss Rate × Average Loss)</pre>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Expectancy = (Win Rate × Average Win) - (Loss Rate × Average Loss)</pre>
 
       <h2>Price Action vs. Indicator-Based Trading</h2>
-      <div className="overflow-x-auto my-6">
-        <table className="w-full text-left text-xs sm:text-sm border-collapse border border-white/10">
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-left text-xs sm:text-sm border-collapse border border-white/10">
           <thead>
-            <tr className="bg-white/10 text-emerald-400">
-              <th className="p-3 border border-white/10">Price Action Trading</th>
-              <th className="p-3 border border-white/10">Indicator-Based Trading</th>
+            <tr class="bg-white/10 text-emerald-400">
+              <th class="p-3 border border-white/10">Price Action Trading</th>
+              <th class="p-3 border border-white/10">Indicator-Based Trading</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="p-3 border border-white/10">Focuses directly on price behavior</td>
-              <td className="p-3 border border-white/10">Calculates information from price/volume</td>
+              <td class="p-3 border border-white/10">Focuses directly on price behavior</td>
+              <td class="p-3 border border-white/10">Calculates information from price/volume</td>
             </tr>
-            <tr className="bg-white/[0.02]">
-              <td className="p-3 border border-white/10">Market structure is central</td>
-              <td className="p-3 border border-white/10">Mathematical transformations are central</td>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10">Market structure is central</td>
+              <td class="p-3 border border-white/10">Mathematical transformations are central</td>
             </tr>
             <tr>
-              <td className="p-3 border border-white/10">Emphasizes support/resistance zones</td>
-              <td className="p-3 border border-white/10">Helps identify trend/momentum conditions</td>
+              <td class="p-3 border border-white/10">Emphasizes support/resistance zones</td>
+              <td class="p-3 border border-white/10">Helps identify trend/momentum conditions</td>
             </tr>
-            <tr className="bg-white/[0.02]">
-              <td className="p-3 border border-white/10">Relies heavily on chart context</td>
-              <td className="p-3 border border-white/10">Often provides standardized signals</td>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10">Relies heavily on chart context</td>
+              <td class="p-3 border border-white/10">Often provides standardized signals</td>
             </tr>
           </tbody>
         </table>
@@ -207,7 +207,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>A Beginner's Price Action Workflow</h2>
       <p>Sequence for learning price action systematically:</p>
-      <pre className="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">1. Market Structure → 2. Key Price Areas → 3. Candlesticks in Context → 4. Build One Setup → 5. Backtest → 6. Journal</pre>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">1. Market Structure → 2. Key Price Areas → 3. Candlesticks in Context → 4. Build One Setup → 5. Backtest → 6. Journal</pre>
 
       <h2>Practical Price Action Checklist</h2>
       <ul>
@@ -289,65 +289,65 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Crypto trading, on the other hand, involves digital assets such as Bitcoin and other cryptocurrencies or tokens (e.g. BTC/USD, ETH/USD, BTC/USDT). The underlying market structures are different. That difference matters because a strategy, risk model, or trading schedule that works well in one environment may not transfer directly to another.</p>
 
       <h2>Forex vs Crypto: Quick Comparison</h2>
-      <div className="overflow-x-auto my-6">
-        <table className="w-full text-left text-xs sm:text-sm border-collapse border border-white/10">
+      <div class="overflow-x-auto my-6">
+        <table class="w-full text-left text-xs sm:text-sm border-collapse border border-white/10">
           <thead>
-            <tr className="bg-white/10 text-emerald-400">
-              <th className="p-3 border border-white/10">Factor</th>
-              <th className="p-3 border border-white/10">Forex</th>
-              <th className="p-3 border border-white/10">Crypto</th>
+            <tr class="bg-white/10 text-emerald-400">
+              <th class="p-3 border border-white/10">Factor</th>
+              <th class="p-3 border border-white/10">Forex</th>
+              <th class="p-3 border border-white/10">Crypto</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="p-3 border border-white/10 font-bold">What is traded?</td>
-              <td className="p-3 border border-white/10">Currencies</td>
-              <td className="p-3 border border-white/10">Digital assets / tokens</td>
+              <td class="p-3 border border-white/10 font-bold">What is traded?</td>
+              <td class="p-3 border border-white/10">Currencies</td>
+              <td class="p-3 border border-white/10">Digital assets / tokens</td>
             </tr>
-            <tr className="bg-white/[0.02]">
-              <td className="p-3 border border-white/10 font-bold">Examples</td>
-              <td className="p-3 border border-white/10 font-mono text-emerald-400">EUR/USD, GBP/USD</td>
-              <td className="p-3 border border-white/10 font-mono text-emerald-400">BTC, ETH, ALT tokens</td>
-            </tr>
-            <tr>
-              <td className="p-3 border border-white/10 font-bold">Market Structure</td>
-              <td className="p-3 border border-white/10">Highly developed global FX market</td>
-              <td className="p-3 border border-white/10">Digital-asset ecosystem with varying structures</td>
-            </tr>
-            <tr className="bg-white/[0.02]">
-              <td className="p-3 border border-white/10 font-bold">Volatility</td>
-              <td className="p-3 border border-white/10">Varies by pair (typically 0.5% - 1.5% daily)</td>
-              <td className="p-3 border border-white/10">Often high (can exceed 5% - 15% daily)</td>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10 font-bold">Examples</td>
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">EUR/USD, GBP/USD</td>
+              <td class="p-3 border border-white/10 font-mono text-emerald-400">BTC, ETH, ALT tokens</td>
             </tr>
             <tr>
-              <td className="p-3 border border-white/10 font-bold">Trading Hours</td>
-              <td className="p-3 border border-white/10">24/5 global business week</td>
-              <td className="p-3 border border-white/10">24/7/365 continuous spot markets</td>
+              <td class="p-3 border border-white/10 font-bold">Market Structure</td>
+              <td class="p-3 border border-white/10">Highly developed global FX market</td>
+              <td class="p-3 border border-white/10">Digital-asset ecosystem with varying structures</td>
             </tr>
-            <tr className="bg-white/[0.02]">
-              <td className="p-3 border border-white/10 font-bold">Leverage</td>
-              <td className="p-3 border border-white/10">Available via regulated products/accounts</td>
-              <td className="p-3 border border-white/10">Available via certain products/platforms</td>
-            </tr>
-            <tr>
-              <td className="p-3 border border-white/10 font-bold">Major Risk</td>
-              <td className="p-3 border border-white/10">Leverage, volatility, counterparty risk</td>
-              <td className="p-3 border border-white/10">Volatility, custody, cybersecurity, fraud risk</td>
-            </tr>
-            <tr className="bg-white/[0.02]">
-              <td className="p-3 border border-white/10 font-bold">Fundamental Drivers</td>
-              <td className="p-3 border border-white/10">Interest rates, inflation, central banks, GDP</td>
-              <td className="p-3 border border-white/10">Adoption, liquidity, tech, sentiment, macro</td>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10 font-bold">Volatility</td>
+              <td class="p-3 border border-white/10">Varies by pair (typically 0.5% - 1.5% daily)</td>
+              <td class="p-3 border border-white/10">Often high (can exceed 5% - 15% daily)</td>
             </tr>
             <tr>
-              <td className="p-3 border border-white/10 font-bold">Beginner Challenge</td>
-              <td className="p-3 border border-white/10">Understanding macro relationships & leverage</td>
-              <td className="p-3 border border-white/10">Understanding digital asset custody & volatility</td>
+              <td class="p-3 border border-white/10 font-bold">Trading Hours</td>
+              <td class="p-3 border border-white/10">24/5 global business week</td>
+              <td class="p-3 border border-white/10">24/7/365 continuous spot markets</td>
             </tr>
-            <tr className="bg-white/[0.02]">
-              <td className="p-3 border border-white/10 font-bold">Regulation</td>
-              <td className="p-3 border border-white/10">Depends on jurisdiction (RBI/FEMA in India)</td>
-              <td className="p-3 border border-white/10">Depends heavily on jurisdiction & asset type</td>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10 font-bold">Leverage</td>
+              <td class="p-3 border border-white/10">Available via regulated products/accounts</td>
+              <td class="p-3 border border-white/10">Available via certain products/platforms</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-white/10 font-bold">Major Risk</td>
+              <td class="p-3 border border-white/10">Leverage, volatility, counterparty risk</td>
+              <td class="p-3 border border-white/10">Volatility, custody, cybersecurity, fraud risk</td>
+            </tr>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10 font-bold">Fundamental Drivers</td>
+              <td class="p-3 border border-white/10">Interest rates, inflation, central banks, GDP</td>
+              <td class="p-3 border border-white/10">Adoption, liquidity, tech, sentiment, macro</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-white/10 font-bold">Beginner Challenge</td>
+              <td class="p-3 border border-white/10">Understanding macro relationships & leverage</td>
+              <td class="p-3 border border-white/10">Understanding digital asset custody & volatility</td>
+            </tr>
+            <tr class="bg-white/[0.02]">
+              <td class="p-3 border border-white/10 font-bold">Regulation</td>
+              <td class="p-3 border border-white/10">Depends on jurisdiction (RBI/FEMA in India)</td>
+              <td class="p-3 border border-white/10">Depends heavily on jurisdiction & asset type</td>
             </tr>
           </tbody>
         </table>
@@ -376,13 +376,13 @@ export const BLOG_POSTS: BlogPost[] = [
       <p>Leverage allows a trader to control a position larger than the deposited margin capital. However, leverage magnifies exposure—and therefore amplifies losses as well as gains. Both the U.S. CFTC and regulatory bodies warn that leveraged trading in forex or crypto derivatives can result in losses that exceed initial deposits.</p>
 
       <h2>Forex vs Crypto Risk Management</h2>
-      <pre className="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Maximum Planned Loss = Account Balance × Risk Percentage (e.g. ₹100,000 × 1% = ₹1,000)</pre>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Maximum Planned Loss = Account Balance × Risk Percentage (e.g. ₹100,000 × 1% = ₹1,000)</pre>
       <p>Evaluating setups with positive mathematical expectancy is far more critical than relying on unmanaged win rates or aggressive leverage.</p>
 
       <h2>What About Indian Traders? (RBI & FEMA Guidance)</h2>
       <p>If you're based in India, do not assume that every international forex platform advertised online is permitted for Indian residents.</p>
       <p>The <strong>Reserve Bank of India (RBI)</strong> states that resident persons may undertake forex transactions only with authorised persons and for permitted purposes under FEMA. RBI also explicitly cautions residents against unauthorised electronic forex trading platforms and misleading promises of unusually high returns.</p>
-      <blockquote className="border-l-4 border-emerald-400 pl-4 italic my-6 text-emerald-300 font-medium">
+      <blockquote class="border-l-4 border-emerald-400 pl-4 italic my-6 text-emerald-300 font-medium">
         Always verify whether an entity is authorised by the RBI before undertaking forex transactions from India.
       </blockquote>
 
@@ -400,10 +400,10 @@ export const BLOG_POSTS: BlogPost[] = [
       </ol>
 
       <h2>A Better Way to Choose Your First Market</h2>
-      <pre className="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">1. Understand Market → 2. Understand Product → 3. Understand Platform → 4. Test Strategy → 5. Start With Risk</pre>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs my-4 border border-white/10">1. Understand Market → 2. Understand Product → 3. Understand Platform → 4. Test Strategy → 5. Start With Risk</pre>
 
       <h2>Beginner Learning Roadmap</h2>
-      <pre className="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">TRADING BASICS → Market Structure → Price Action → Risk Management → Position Sizing → Backtesting → Journaling → Demo Simulation → Real Capital</pre>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">TRADING BASICS → Market Structure → Price Action → Risk Management → Position Sizing → Backtesting → Journaling → Demo Simulation → Real Capital</pre>
 
       <h2>Final Takeaway</h2>
       <p>The Forex vs Crypto debate shouldn't be about 'which one makes more money.' Choose Forex if you want to study currency markets, macroeconomic relationships, and structured session trading through authorised channels. Choose Crypto if you genuinely want to understand digital assets, blockchain ecosystems, and crypto volatility. Build a disciplined process before risking capital.</p>
@@ -493,7 +493,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       <h2>Position Sizing Formula</h2>
       <p>Never pick arbitrary lot sizes. Calculate your position size using the formula:</p>
-      <pre className="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Position Size = (Account Balance × Risk %) / (Entry Price - Stop Loss Price)</pre>
+      <pre class="bg-black/60 p-4 rounded-xl text-emerald-400 font-mono text-xs sm:text-sm my-4 border border-white/10">Position Size = (Account Balance × Risk %) / (Entry Price - Stop Loss Price)</pre>
 
       <h2>Rule of Thumb: Limit Risk to 1-2% Per Trade</h2>
       <p>Professional risk management dictates that no single trade execution should risk more than 1% to 2% of overall trading capital. This buffers your portfolio against consecutive drawdown streaks.</p>
@@ -542,14 +542,14 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Core Modules of a Professional Forex Course</h2>
       <ol>
         <li><strong>Forex Fundamentals & Pair Mechanics:</strong> Understanding Base vs. Quote currencies, pips, leverage, and margin.</li>
-        <li><strong>Price Action & Market Structure:</strong> Identifying trends, breaks of structure (BOS), and key support/resistance liquidity pools. Read our full <a href="/blog/mastering-price-action-trading" className="text-emerald-400 font-semibold underline">Price Action Guide</a>.</li>
+        <li><strong>Price Action & Market Structure:</strong> Identifying trends, breaks of structure (BOS), and key support/resistance liquidity pools. Read our full <a href="/blog/mastering-price-action-trading" class="text-emerald-400 font-semibold underline">Price Action Guide</a>.</li>
         <li><strong>Trading Sessions & Volatility Timing:</strong> Mastering execution during high-liquidity overlaps (London 1:00 PM IST & New York 6:00 PM IST).</li>
         <li><strong>Risk Framework & Capital Protection:</strong> Applying strict 1% account risk per trade with 1:2 minimum reward targets.</li>
         <li><strong>Trading Psychology & Journaling:</strong> Controlling fear, greed, and revenge trading habits through structured log-keeping.</li>
       </ol>
 
       <h2>How to Get Started with Insidious Bulls Mentorship</h2>
-      <p>Our practical mentorship program guides traders step-by-step through live market analysis and real trade execution examples. Visit our <a href="/about" className="text-emerald-400 font-semibold underline">About Insidious Bulls</a> page or <a href="/contact" className="text-emerald-400 font-semibold underline">Contact Us</a> to enquire about upcoming cohort availability.</p>
+      <p>Our practical mentorship program guides traders step-by-step through live market analysis and real trade execution examples. Visit our <a href="/about" class="text-emerald-400 font-semibold underline">About Insidious Bulls</a> page or <a href="/contact" class="text-emerald-400 font-semibold underline">Contact Us</a> to enquire about upcoming cohort availability.</p>
     `,
     faq: [
       {
@@ -595,12 +595,12 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>Key Steps to Trade Crypto Safely</h2>
       <ol>
         <li><strong>Analyze Bitcoin (BTC) First:</strong> Bitcoin acts as the index for the broader crypto market. When BTC consolidates after a bullish expansion, altcoins often experience liquidity inflows.</li>
-        <li><strong>Use Clean Price Action:</strong> Rely on key support/resistance zones and trend structure instead of speculative indicators. Read our <a href="/blog/mastering-price-action-trading" className="text-emerald-400 font-semibold underline">Price Action Blueprint</a>.</li>
+        <li><strong>Use Clean Price Action:</strong> Rely on key support/resistance zones and trend structure instead of speculative indicators. Read our <a href="/blog/mastering-price-action-trading" class="text-emerald-400 font-semibold underline">Price Action Blueprint</a>.</li>
         <li><strong>Protect Capital with Stop Losses:</strong> Crypto volatility can lead to sudden 10-20% candles. Hard stop-loss orders are mandatory.</li>
       </ol>
 
       <h2>Risk Control in Crypto Trading</h2>
-      <p>Because crypto volatility is high, position sizing should be adjusted so that total trade risk never exceeds 1% to 2% of total portfolio balance. Calculate position sizes using our <a href="/blog/1-2-risk-reward-rule" className="text-emerald-400 font-semibold underline">Risk Management Framework</a>.</p>
+      <p>Because crypto volatility is high, position sizing should be adjusted so that total trade risk never exceeds 1% to 2% of total portfolio balance. Calculate position sizes using our <a href="/blog/1-2-risk-reward-rule" class="text-emerald-400 font-semibold underline">Risk Management Framework</a>.</p>
     `,
     faq: [
       {
