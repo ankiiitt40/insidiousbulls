@@ -31,11 +31,11 @@ function HomePage() {
   return (
     <section className="relative w-full flex flex-col items-center text-center px-4 sm:px-5 py-12 sm:py-24 overflow-x-hidden">
       <SEO
-        title="Insidious Bulls | Learn Forex, Crypto & Commodity Trading"
-        description="Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets."
+        title="INSIDIOUS BULLS | Trading Course & Forex Trading Education"
+        description="INSIDIOUS BULLS is a premium trading education platform. Learn forex trading, technical analysis, and risk management with practical, real-world courses for beginners."
         canonical="https://insidiousbulls.com/"
-        ogTitle="Insidious Bulls | Learn Forex, Crypto & Commodity Trading"
-        ogDescription="Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets."
+        ogTitle="INSIDIOUS BULLS | Trading Course & Forex Trading Education"
+        ogDescription="INSIDIOUS BULLS is a premium trading education platform. Learn forex trading, technical analysis, and risk management with practical, real-world courses for beginners."
         ogUrl="https://insidiousbulls.com/"
       />
 
@@ -50,11 +50,11 @@ function HomePage() {
               showBorder={false}
               className="text-[28px] sm:text-3xl md:text-5xl lg:text-7xl font-bold leading-tight break-words"
             >
-              Trade Smarter. Grow Faster.
+              Trading Education & Forex Trading Courses
             </GradientText>
           </h1>
           <p className="text-white/60 text-sm sm:text-base md:text-lg max-w-2xl px-4 text-center mt-2 leading-relaxed">
-            Insidious Bulls is a premium trading education platform helping learners master <strong className="font-medium text-white/80">forex, crypto, commodities, price action,</strong> and <strong className="font-medium text-white/80">risk management</strong>.
+            INSIDIOUS BULLS is a premium trading education platform helping learners master <strong className="font-medium text-white/80">forex, crypto, commodities, price action,</strong> and <strong className="font-medium text-white/80">risk management</strong>.
           </p>
         </div>
 
@@ -109,6 +109,22 @@ function HomePage() {
         >
           Beginner-Friendly Trading Education.
         </GradientText>
+        
+        {/* AEO / GEO Entity Section */}
+        <div className="max-w-3xl mt-8 p-6 bg-white/5 border border-white/10 rounded-2xl text-left shadow-lg">
+          <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">What is INSIDIOUS BULLS?</h2>
+          <p className="text-white/70 mb-4 leading-relaxed">
+            <strong>INSIDIOUS BULLS</strong> is a comprehensive trading education platform dedicated to teaching financial market mechanics. We provide structured <a href="/trading-course" className="text-emerald-400 hover:underline">trading courses</a> designed for both beginners and intermediate traders.
+          </p>
+          <h3 className="text-lg font-semibold text-white mb-2 mt-6">What We Teach</h3>
+          <p className="text-white/70 mb-4 leading-relaxed">
+            Our curriculum focuses on practical application rather than theoretical noise. Students learn <a href="/forex-trading-course" className="text-emerald-400 hover:underline">Forex Trading</a>, <a href="/technical-analysis" className="text-emerald-400 hover:underline">Technical Analysis</a>, Price Action strategy, and strict <a href="/risk-management" className="text-emerald-400 hover:underline">Risk Management</a> protocols.
+          </p>
+          <h3 className="text-lg font-semibold text-white mb-2 mt-6">Who This Is For</h3>
+          <p className="text-white/70 leading-relaxed">
+            Our education serves beginners eager to learn financial markets safely, and existing traders who want to refine their systematic approach. Whether you are looking for a complete <a href="/trading-for-beginners" className="text-emerald-400 hover:underline">trading guide for beginners</a> or advanced market structure insights, INSIDIOUS BULLS provides the foundation.
+          </p>
+        </div>
 
       </div>
 

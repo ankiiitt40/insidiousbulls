@@ -14,7 +14,12 @@ const STATIC_ROUTES = [
   '/about',
   '/contact',
   '/blog',
-  '/privacy-policy'
+  '/privacy-policy',
+  '/trading-course',
+  '/forex-trading-course',
+  '/technical-analysis',
+  '/risk-management',
+  '/trading-for-beginners'
 ];
 
 // Helper to start a tiny static file server

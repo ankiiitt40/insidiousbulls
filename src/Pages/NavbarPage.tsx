@@ -3,20 +3,12 @@ import StaggeredMenu from '../components/Navbar/StaggeredMenu'
 
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
-  { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
+  { label: 'Courses', ariaLabel: 'View trading courses', link: '/trading-course' },
   { label: 'Blog', ariaLabel: 'Read trading blog', link: '/blog' },
+  { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
   { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' },
 ]
-const socialItems = [
-  {
-    label: "Instagram",
-    link: "https://www.instagram.com/tradewith_shubham7?igsh=dDM0MDRsc2FjMWV0"
-  },
-  {
-    label: "LinkedIn",
-    link: "https://www.linkedin.com/in/shubhamv7/"
-  }
-];
+const socialItems = [];
 
 function NavbarPage() {
   const [scrolled, setScrolled] = useState(false)

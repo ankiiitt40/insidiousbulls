@@ -22,27 +22,6 @@ export default function Footer() {
           <p className="text-white/60 text-sm leading-relaxed">
             Learn forex, crypto, and commodity trading! Explore expert-led trading education, market analysis, and practical strategies for global financial markets.
           </p>
-          
-          <div className="flex gap-4 items-center mt-2">
-            <a 
-              href="https://www.instagram.com/tradewith_shubham7?igsh=dDM0MDRsc2FjMWV0" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Follow us on Instagram"
-              className="p-2.5 bg-white/5 border border-white/10 rounded-xl text-white/80 hover:bg-white/10 hover:border-white/20 hover:text-emerald-400 transition-all hover:-translate-y-1"
-            >
-              <Instagram size={20} />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/shubhamv7/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Connect with us on LinkedIn"
-              className="p-2.5 bg-white/5 border border-white/10 rounded-xl text-white/80 hover:bg-white/10 hover:border-white/20 hover:text-emerald-400 transition-all hover:-translate-y-1"
-            >
-              <Linkedin size={20} />
-            </a>
-          </div>
         </section>
 
         {/* Links Grid */}
@@ -52,18 +31,38 @@ export default function Footer() {
             <h3 className="text-white font-medium mb-6 uppercase tracking-widest text-xs opacity-80">Explore</h3>
             <ul className="flex flex-col gap-4">
               <li>
-                <Link to="/" className="text-white/50 hover:text-emerald-400 text-sm transition-colors focus-visible:outline-emerald-400 focus-visible:outline-offset-2">
-                  Home
+                <Link to="/trading-course" className="text-white/50 hover:text-emerald-400 text-sm transition-colors focus-visible:outline-emerald-400 focus-visible:outline-offset-2">
+                  Trading Courses
+                </Link>
+              </li>
+              <li>
+                <Link to="/forex-trading-course" className="text-white/50 hover:text-emerald-400 text-sm transition-colors focus-visible:outline-emerald-400 focus-visible:outline-offset-2">
+                  Forex Trading Education
+                </Link>
+              </li>
+              <li>
+                <Link to="/technical-analysis" className="text-white/50 hover:text-emerald-400 text-sm transition-colors focus-visible:outline-emerald-400 focus-visible:outline-offset-2">
+                  Technical Analysis
+                </Link>
+              </li>
+              <li>
+                <Link to="/risk-management" className="text-white/50 hover:text-emerald-400 text-sm transition-colors focus-visible:outline-emerald-400 focus-visible:outline-offset-2">
+                  Risk Management
+                </Link>
+              </li>
+              <li>
+                <Link to="/trading-for-beginners" className="text-white/50 hover:text-emerald-400 text-sm transition-colors focus-visible:outline-emerald-400 focus-visible:outline-offset-2">
+                  Trading for Beginners
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-white/50 hover:text-emerald-400 text-sm transition-colors focus-visible:outline-emerald-400 focus-visible:outline-offset-2">
-                  About Us
+                  About INSIDIOUS BULLS
                 </Link>
               </li>
               <li>
                 <Link to="/blog" className="text-white/50 hover:text-emerald-400 text-sm transition-colors focus-visible:outline-emerald-400 focus-visible:outline-offset-2">
-                  Blog / Insights
+                  Trading Blog
                 </Link>
               </li>
             </ul>

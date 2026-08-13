@@ -683,6 +683,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>How Does Forex Trading Work?</h2>
       <p>Imagine the EUR/USD exchange rate is 1.1000. This means one euro is being quoted at 1.1000 U.S. dollars. If the quote later moves to 1.1100, the euro has strengthened relative to the dollar. But actual trading involves much more than predicting direction. You also need to consider entry, stop, position size, spread, fees, slippage, and leverage.</p>
 
+      <div class="bg-emerald-950/40 border border-emerald-500/40 rounded-xl p-4 my-4"><p class="text-sm text-emerald-300"><strong>Enroll Now:</strong> Take the next step and join our premium <a href="/forex-trading-course" class="text-white underline font-semibold">Forex Trading Course</a>.</p></div>
       <h2>Understanding Currency Pairs</h2>
       <p>In <strong>EUR/USD</strong>, the first currency (EUR) is the Base currency, and the second (USD) is the Quote currency. The quote tells you how many units of the quote currency correspond to one unit of the base currency.</p>
       

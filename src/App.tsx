@@ -15,10 +15,14 @@ import CustomCursor from "./components/ui/CustomCursor";
 import MobileCTA from "./components/ui/MobileCTA";
 import Footer from "./components/ui/Footer";
 import ErrorBoundary from "./components/ui/ErrorBoundary";
+import TradingCoursePage from "./Pages/TradingCoursePage";
+import ForexTradingCoursePage from "./Pages/ForexTradingCoursePage";
+import TechnicalAnalysisPage from "./Pages/TechnicalAnalysisPage";
+import RiskManagementPage from "./Pages/RiskManagementPage";
+import TradingForBeginnersPage from "./Pages/TradingForBeginnersPage";
 
 // Global reference to Lenis for route synchronization
 let lenisInstance: Lenis | null = null;
-
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -121,6 +125,11 @@ function App() {
                   <Route path="/blog" element={<BlogPage />} />
                   <Route path="/blog/:slug" element={<BlogPostPage />} />
                   <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                  <Route path="/trading-course" element={<TradingCoursePage />} />
+                  <Route path="/forex-trading-course" element={<ForexTradingCoursePage />} />
+                  <Route path="/technical-analysis" element={<TechnicalAnalysisPage />} />
+                  <Route path="/risk-management" element={<RiskManagementPage />} />
+                  <Route path="/trading-for-beginners" element={<TradingForBeginnersPage />} />
                 </Routes>
               </motion.div>
             </AnimatePresence>
